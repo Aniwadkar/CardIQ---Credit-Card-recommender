@@ -11,6 +11,7 @@ PROJECT_ROOT = Path(__file__).parent.parent.parent
 
 # API Configuration
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
+USE_MOCK_MODE = os.getenv("USE_MOCK_MODE", "true").lower() == "true" or not ANTHROPIC_API_KEY
 HAIKU_MODEL = os.getenv("HAIKU_MODEL", "claude-3-5-haiku-20241022")
 SONNET_MODEL = os.getenv("SONNET_MODEL", "claude-sonnet-4-20250514")
 
