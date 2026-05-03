@@ -21,7 +21,7 @@ class Orchestrator(BaseAgent):
     def get_system_prompt(self) -> str:
         return ORCHESTRATOR_SYSTEM_PROMPT
     
-    def process(self, user_profile: UserProfile) -> RecommendationOutput:
+    def process(self, user_profile: UserProfile, verbose: bool = True) -> RecommendationOutput:
         """
         Main workflow:
         1. Analyze spending
@@ -29,44 +29,56 @@ class Orchestrator(BaseAgent):
         3. Synthesize recommendations
         """
         
-        print("=" * 60)
-        print("CardIQ Recommendation System")
-        print("=" * 60)
+        if verbose:
+            print("=" * 60)
+            print("CardIQ Recommendation System")
+            print("=" * 60)
         
         # Step 1: Analyze spending
-        print("\n[1/3] Analyzing spending patterns...")
+        if verbose:
+            print("\n[1/3] Analyzing spending patterns...")
         spending_analysis = self.spending_analyzer.process(user_profile)
-        print(f"✓ Analysis complete:")
-        print(f"  - Total monthly spend: ${spending_analysis.total_monthly_spend:,.2f}")
-        print(f"  - Top categories: {', '.join(spending_analysis.top_categories)}")
-        print(f"  - Profile: {spending_analysis.spending_profile}")
+        if verbose:
+            print(f"✓ Analysis complete:")
+            print(f"  - Total monthly spend: ${spending_analysis.total_monthly_spend:,.2f}")
+            print(f"  - Top categories: {', '.join(spending_analysis.top_categories)}")
+            print(f"  - Profile: {spending_analysis.spending_profile}")
         
         # Step 2: Evaluate cards
-        print("\n[2/3] Evaluating credit cards...")
+        if verbose:
+            print("\n[2/3] Evaluating credit cards...")
         card_evaluations = self.card_evaluator.process(spending_analysis, user_profile)
-        print(f"✓ Evaluated {card_evaluations.total_cards_evaluated} cards")
-        print(f"  Top 3 cards:")
-        for i, card_eval in enumerate(card_evaluations.top_cards[:3], 1):
-            print(f"    {i}. {card_eval.card_name} (Year 1 value: ${card_eval.net_value_year_1:,.2f})")
+        if verbose:
+            print(f"✓ Evaluated {card_evaluations.total_cards_evaluated} cards")
+            print(f"  Top 3 cards:")
+            for i, card_eval in enumerate(card_evaluations.top_cards[:3], 1):
+                print(f"    {i}. {card_eval.card_name} (Year 1 value: ${card_eval.net_value_year_1:,.2f})")
         
         # Step 3: Synthesize recommendations
-        print("\n[3/3] Creating personalized recommendations...")
+        if verbose:
+            print("\n[3/3] Creating personalized recommendations...")
         recommendations = self.recommendation_synthesizer.process(
             spending_analysis=spending_analysis,
             card_evaluations=card_evaluations,
             user_profile=user_profile
         )
-        print(f"✓ Generated {len(recommendations.recommendations)} detailed recommendations")
+        if verbose:
+            print(f"✓ Generated {len(recommendations.recommendations)} detailed recommendations")
         
-        print("\n" + "=" * 60)
-        print("Recommendation Generation Complete!")
-        print("=" * 60)
+        if verbose:
+            print("\n" + "=" * 60)
+            print("Recommendation Generation Complete!")
+            print("=" * 60)
         
         return recommendations
     
     def get_quick_recommendation(self, user_profile: UserProfile) -> str:
         """Get a quick text recommendation (simplified)"""
         recommendations = self.process(user_profile)
+        return self.format_recommendation_output(recommendations)
+
+    def format_recommendation_output(self, recommendations: RecommendationOutput) -> str:
+        """Format recommendation output model as readable text."""
         
         # Format as readable text
         output = "\n\n"

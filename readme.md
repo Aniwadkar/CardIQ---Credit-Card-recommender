@@ -89,6 +89,79 @@ python scripts/build_vector_db.py
 python interactive_main.py
 ```
 
+### Run As API Service
+
+Start the HTTP API:
+
+```bash
+python run_api.py
+```
+
+API endpoints:
+
+- `GET /health`
+- `POST /recommendations`
+
+Interactive API docs:
+
+- `http://localhost:8000/docs`
+
+Example request:
+
+```bash
+curl -X POST "http://localhost:8000/recommendations" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "monthly_spending": {
+      "dining": 1200,
+      "groceries": 300,
+      "travel": 400,
+      "gas": 150,
+      "streaming": 50,
+      "other": 300,
+      "flights": 100,
+      "hotels": 100,
+      "transit": 50
+    },
+    "credit_score": "excellent",
+    "max_annual_fee": 500,
+    "preferred_rewards_type": null,
+    "planning_to_travel": false,
+    "include_formatted_text": true
+  }'
+```
+
+---
+
+## 🧪 Run Tests
+
+Run the API test suite:
+
+```bash
+pytest -q
+```
+
+---
+
+## 🐳 Run With Docker
+
+Build and start CardIQ API:
+
+```bash
+docker compose up --build
+```
+
+Then open:
+
+- `http://localhost:8000/health`
+- `http://localhost:8000/docs`
+
+Stop containers:
+
+```bash
+docker compose down
+```
+
 ---
 
 ## 📊 Example Usage
