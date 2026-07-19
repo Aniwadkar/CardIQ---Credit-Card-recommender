@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CardIQ — Find Your Perfect Card</title>
+  <title>CardIQ - Credit Card Recommendations</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
@@ -44,7 +44,7 @@
       font-family: 'Syne', sans-serif;
       font-weight: 800;
       font-size: 1.5rem;
-      letter-spacing: -0.02em;
+      letter-spacing: 0;
     }
     .logo span { color: var(--accent); }
 
@@ -80,7 +80,7 @@
       font-size: clamp(2.4rem, 5vw, 3.8rem);
       font-weight: 800;
       line-height: 1.05;
-      letter-spacing: -0.03em;
+      letter-spacing: 0;
       margin-bottom: 1.2rem;
     }
 
@@ -107,7 +107,7 @@
     .form-card {
       background: var(--card-bg);
       border: 1.5px solid var(--border);
-      border-radius: 20px;
+      border-radius: 8px;
       overflow: hidden;
     }
 
@@ -139,7 +139,7 @@
       font-family: 'Syne', sans-serif;
       font-weight: 700;
       font-size: 1rem;
-      letter-spacing: -0.01em;
+      letter-spacing: 0;
     }
 
     .section-sub {
@@ -301,7 +301,7 @@
       font-size: 1rem;
       font-weight: 700;
       cursor: pointer;
-      letter-spacing: -0.01em;
+      letter-spacing: 0;
       transition: transform 0.15s, background 0.15s;
     }
 
@@ -382,13 +382,13 @@
 
 <header>
   <div class="logo">Card<span>IQ</span></div>
-  <div class="badge">AI-Powered · 25 Cards</div>
+  <div class="badge">Data-backed · 25 cards</div>
 </header>
 
 <section class="hero">
-  <p class="hero-eyebrow">Multi-Agent Recommendation Engine</p>
+  <p class="hero-eyebrow">Explainable recommendation engine</p>
   <h1>Find your <em>perfect</em> credit card in seconds</h1>
-  <p>Enter your monthly spending and we'll run it through 4 AI agents to find the card that earns you the most — with dollar-value projections.</p>
+  <p>Enter your monthly spending to compare verified card terms, fees, credits, and projected dollar value.</p>
 </section>
 
 <div class="form-wrap">
@@ -482,7 +482,7 @@
     <!-- Submit -->
     <div class="submit-wrap">
       <button type="submit" class="submit-btn" id="submitBtn">Analyze My Spending →</button>
-      <p class="submit-note">Takes ~20–30 seconds.<br>Powered by Claude Haiku + Sonnet.</p>
+      <p class="submit-note">Uses the validated 25-card catalog.<br>Results are calculated deterministically.</p>
     </div>
 
   </form>
@@ -491,8 +491,8 @@
 <!-- Loading overlay -->
 <div class="loading-overlay" id="loadingOverlay">
   <div class="spinner"></div>
-  <div class="loading-text">Running 4 AI Agents…</div>
-  <div class="loading-sub">Analyzing spending · Evaluating 25 cards · Synthesizing your match</div>
+  <div class="loading-text">Calculating your matches...</div>
+  <div class="loading-sub">Analyzing spending · Evaluating active cards · Ranking projected value</div>
 </div>
 
 <script>

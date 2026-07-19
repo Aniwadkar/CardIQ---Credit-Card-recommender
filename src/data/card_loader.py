@@ -13,10 +13,19 @@ class CardLoader:
         self._cards_cache = None
     
     def load_cards(self) -> List[Dict]:
-        """Load cards from JSON file as dictionaries"""
+        """Load cards from a raw array or processed catalog envelope."""
         if self._cards_cache is None:
             with open(self.json_path, 'r', encoding='utf-8') as f:
-                self._cards_cache = json.load(f)
+                payload = json.load(f)
+
+            if isinstance(payload, list):
+                self._cards_cache = payload
+            elif isinstance(payload, dict) and isinstance(payload.get("cards"), list):
+                self._cards_cache = payload["cards"]
+            else:
+                raise ValueError(
+                    f"Card catalog at {self.json_path} must be a JSON array or contain a 'cards' array."
+                )
         return self._cards_cache
     
     def load_cards_as_models(self) -> List[CreditCard]:

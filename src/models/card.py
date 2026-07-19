@@ -9,6 +9,8 @@ class SignupBonus(BaseModel):
     spend_requirement: Optional[int]
     timeframe_months: Optional[int]
     estimated_value: Optional[float]
+    qualification_type: str = "spend"
+    details: Optional[str] = None
 
 class Eligibility(BaseModel):
     """Card eligibility requirements"""
@@ -37,3 +39,7 @@ class CreditCard(BaseModel):
     best_for: List[str]
     foreign_transaction_fee: float
     special_features: List[str]
+    product_status: str = "active"
+    source_url: str
+    source_last_checked: str
+    source_note: Optional[str] = None

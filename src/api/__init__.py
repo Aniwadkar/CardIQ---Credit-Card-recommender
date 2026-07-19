@@ -1,5 +1,3 @@
-"""API clients module"""
-from .claude_client import ClaudeClient
-from .server import app
+"""API package for CardIQ."""
 
-__all__ = ["ClaudeClient", "app"]
+__all__ = []

@@ -1,354 +1,140 @@
-# CardIQ: AI-Powered Credit Card Recommendation System
+# CardIQ
 
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+CardIQ is a data-backed credit card recommendation system built around a curated catalog of 25 U.S. cards. It validates issuer-sourced card data, produces an analytics-ready dataset, and ranks active consumer cards using deterministic calculations based on a user's monthly spending.
 
-**CardIQ** is a multi-agent system that provides personalized credit card recommendations using Retrieval-Augmented Generation (RAG) and large language models (LLMs).
+The project intentionally stays focused on 25 cards. Its goal is transparent data quality and explainable results, not catalog size.
 
-## 🎯 Project Overview
+## What It Demonstrates
 
-CardIQ analyzes your monthly spending habits and recommends the best credit cards for YOUR specific situation, complete with:
-- ✅ Exact dollar value projections (Year 1, 2, 3)
-- ✅ Personalized optimization strategies
-- ✅ Smart warnings about fees and restrictions
-- ✅ Multi-card portfolio recommendations
+- Data ingestion from a versioned raw JSON catalog
+- Source provenance and offer verification dates
+- Validation with blocking errors and reviewable warnings
+- Raw-to-processed ETL with deterministic derived features
+- Explainable first-year and multi-year value calculations
+- FastAPI web and JSON interfaces
+- Reproducible evaluation scenarios
+- Container deployment to Google Cloud Run
 
-### Key Features
+## Architecture
 
-- **Multi-Agent Architecture**: 4 specialized agents (Spending Analyzer, Card Evaluator, Recommendation Synthesizer, Orchestrator)
-- **RAG Integration**: FAISS vector database with semantic search
-- **Hybrid Model Strategy**: Claude Haiku for calculations, Sonnet for explanations (31% cost savings)
-- **Interactive CLI**: User-friendly command-line interface
-- **25 Credit Cards**: Curated database covering major categories
-
----
-
-## 🏗️ System Architecture
-```
-User Input → Agent 1 (Analyze Spending) → Agent 2 (Calculate Values) → 
-Agent 3 (Generate Recommendations) → Formatted Output
-
-                    ↓
-            RAG Database (FAISS)
-            25 Credit Cards
-```
-
-### Agents
-
-1. **Spending Analyzer** (Haiku): Analyzes spending patterns, identifies top categories
-2. **Card Evaluator** (Haiku): Calculates rewards, fees, and net value for all 25 cards
-3. **Recommendation Synthesizer** (Sonnet): Generates personalized explanations with RAG
-4. **Orchestrator** (Haiku): Coordinates workflow and formats output
-
----
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Python 3.10+
-- Anthropic API key ([Get one here](https://console.anthropic.com/))
-
-### Installation
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/YOUR_USERNAME/cardiq.git
-cd cardiq
+```text
+Official issuer pages
+        |
+        v
+data/raw credit card catalog
+        |
+        v
+Validation -> quality report
+        |
+        v
+Transformation -> data/processed/cards_processed.json
+        |
+        v
+Repository -> deterministic scoring -> top 3 recommendations
+        |                                  |
+        v                                  v
+FastAPI JSON API                    Web comparison UI
 ```
 
-2. **Create virtual environment**
-```bash
-python -m venv venv
+The active recommendation path does not ask an LLM to calculate or rank cards. This keeps the financial output reproducible and testable. Experimental agent and RAG modules remain in `src/agents` and `src/rag`, but they do not control the production ranking.
 
-# On Windows:
-venv\Scripts\activate
+## Data Layers
 
-# On Mac/Linux:
-source venv/bin/activate
+| Layer | Purpose |
+| --- | --- |
+| `data/raw/` | Curated issuer-sourced input records |
+| `data/processed/` | Normalized records and derived features used by the app |
+| `data/quality/` | Pipeline status and per-card validation results |
+| `outputs/evaluation/` | Fixed scenario results for portfolio review |
+
+The application reads `data/processed/cards_processed.json` by default. The pipeline always reads the raw catalog and regenerates the processed artifact.
+
+## Local Setup
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
 ```
 
-3. **Install dependencies**
-```bash
-pip install -r requirements.txt
+Run the data pipeline:
+
+```powershell
+python scripts/run_card_pipeline.py
 ```
 
-4. **Set up environment variables**
-```bash
-cp .env.example .env
-# Edit .env and add your ANTHROPIC_API_KEY
+Expected result:
+
+```text
+Card pipeline complete: 25/25 processed, 0 errors, 0 warnings.
 ```
 
-5. **Build vector database** (one-time setup)
-```bash
-python scripts/build_vector_db.py
+Run the web application:
+
+```powershell
+python app.py
 ```
 
-6. **Run the system!**
-```bash
-python interactive_main.py
-```
+Open [http://localhost:8000](http://localhost:8000). Use `localhost` or `127.0.0.1` in the browser; `0.0.0.0` is only the server bind address.
 
-### Run As API Service
+## API
 
-Start the HTTP API:
+Start the JSON API:
 
-```bash
+```powershell
 python run_api.py
 ```
 
-API endpoints:
+Interactive documentation is available at [http://localhost:8000/docs](http://localhost:8000/docs).
+
+Main endpoints:
 
 - `GET /health`
 - `POST /recommendations`
 
-Interactive API docs:
+## Evaluation Scenarios
 
-- `http://localhost:8000/docs`
+Generate the food-focused, frequent-traveler, and no-annual-fee examples:
 
-Example request:
-
-```bash
-curl -X POST "http://localhost:8000/recommendations" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "monthly_spending": {
-      "dining": 1200,
-      "groceries": 300,
-      "travel": 400,
-      "gas": 150,
-      "streaming": 50,
-      "other": 300,
-      "flights": 100,
-      "hotels": 100,
-      "transit": 50
-    },
-    "credit_score": "excellent",
-    "max_annual_fee": 500,
-    "preferred_rewards_type": null,
-    "planning_to_travel": false,
-    "include_formatted_text": true
-  }'
+```powershell
+python scripts/run_evaluation_scenarios.py
 ```
 
----
+Outputs:
 
-## 🧪 Run Tests
+- `outputs/evaluation/scenario_results.json`
+- `outputs/evaluation/scenario_summary.md`
 
-Run the API test suite:
+These examples demonstrate that rankings change with spending behavior and fee constraints.
 
-```bash
-pytest -q
+## Tests
+
+```powershell
+python -m pytest -q
 ```
 
----
+The suite covers the API, catalog provenance, processed-data loading, validation, ETL, scoring, recommendation behavior, and evaluation scenarios.
 
-## 🐳 Run With Docker
+## Google Cloud Run
 
-Build and start CardIQ API:
+The production container uses `requirements-web.txt`, while `requirements.txt` retains the optional local RAG and experimentation dependencies.
 
-```bash
-docker compose up --build
+Deploy from the repository root:
+
+```powershell
+gcloud run deploy cardiq `
+  --source . `
+  --project project-dda6cdb1-a2ba-470b-a47 `
+  --region us-central1 `
+  --allow-unauthenticated
 ```
 
-Then open:
+Cloud Run supplies the `PORT` environment variable. The included Dockerfile starts FastAPI on that port and packages the processed catalog with the application.
 
-- `http://localhost:8000/health`
-- `http://localhost:8000/docs`
+## Important Limitations
 
-Stop containers:
-
-```bash
-docker compose down
-```
-
----
-
-## 📊 Example Usage
-```bash
-$ python interactive_main.py
-
-Welcome to CardIQ!
-============================================================
-
-Monthly spending on DINING: 1200
-Monthly spending on GROCERIES: 300
-Monthly spending on TRAVEL: 400
-...
-
-🎯 YOUR PERSONALIZED CREDIT CARD RECOMMENDATIONS
-============================================================
-
-🥇 RANK #1: American Express Gold
-WHY THIS CARD:
-With your $1,200 monthly dining spend, the Amex Gold's 4x points 
-earn you $720/year in rewards...
-
-FINANCIAL SUMMARY:
-  • Year 1 Value: $2,294.00
-  • Year 2 Value: $3,338.00
-  • Annual Fee: $325.00
-
-HOW TO MAXIMIZE:
-  ✓ Use this card exclusively for all grocery shopping to earn 3% cash back on your largest spending category
-  ✓ Fill up with gas using this card to maximize the 3% rate on your second-highest expense
-  ✓ Take advantage of the $7 monthly Disney+ credit if you subscribe to any Disney streaming services
-  ✓ Consider the $15 monthly Home Chef credit if you're interested in meal kits - could save $180/year
-  ✓ Use the 3% 'other' category rate for miscellaneous purchases that don't fit other bonus categories
-
-WATCH OUT FOR:
-  ⚠  American Express isn't accepted everywhere - some smaller grocery stores and gas stations may not take it
-  ⚠  No foreign transaction fee information provided - verify before international purchases
-  ⚠  The 3% 'other' category may have spending caps or restrictions not clearly specified
-  
-```
-
----
-
-## 📁 Project Structure
-```
-cardiq/
-├── data/
-│   ├── raw/
-│   │   └── credit_cards_llm_special_features_filled.json  # 25 credit cards
-│   └── vector_db/                    # FAISS index (generated)
-├── src/
-│   ├── agents/                       # 4 agent implementations
-│   │   ├── orchestrator.py
-│   │   ├── spending_analyzer.py
-│   │   ├── card_evaluator.py
-│   │   └── recommendation_synthesizer.py
-│   ├── api/
-│   │   └── claude_client.py          # Anthropic API wrapper
-│   ├── config/
-│   │   └── settings.py               # Configuration
-│   ├── data/
-│   │   ├── card_loader.py            # Load card data
-│   │   └── text_chunker.py           # Create embeddings
-│   ├── models/                       # Pydantic data models
-│   ├── prompts/                      # LLM prompts
-│   ├── rag/                          # RAG pipeline
-│   │   ├── embeddings.py
-│   │   ├── vector_store.py
-│   │   └── retriever.py
-│   └── utils/
-│       └── calculations.py           # Financial calculations
-├── scripts/
-│   └── build_vector_db.py            # Setup script
-├── notebooks/
-│   └── 02_test_rag_retrieval.ipynb   # RAG testing
-├── interactive_main.py               # Main entry point
-├── requirements.txt
-├── .env.example
-└── README.md
-```
-
----
-
-## 🧪 Testing
-
-### Test RAG Retrieval
-```bash
-python test_rag_simple.py
-```
-
-### Test Different Profiles
-Edit `interactive_main.py` and modify spending amounts, or use the interactive CLI.
-
----
-
-## 💰 Cost Estimation
-
-- **Per recommendation**: ~$0.04
-- **With $50 API credit**: ~1,250 recommendations
-- **Cost breakdown**:
-  - Agent 1 (Haiku): $0.002
-  - Agent 2 (Haiku): $0.006
-  - Agent 3 (Sonnet): $0.0315
-  - Orchestrator (Haiku): $0.0008
-
-**Savings**: 31% cheaper than all-Sonnet approach while maintaining quality.
-
----
-
-## 🎓 Academic Context
-
-This project was developed as part of the **Introduction to LLMs** course at Indiana University (Fall 2024).
-
-### Key Learning Objectives Demonstrated
-
-- Multi-agent system design
-- Retrieval-Augmented Generation (RAG)
-- Prompt engineering
-- Cost optimization strategies
-- Pydantic data validation
-- Vector databases (FAISS)
-
-### Evaluation Results
-
-- **Top-1 Accuracy**: 90% (9/10 correct recommendations)
-- **Financial Calculation Accuracy**: 100% (deterministic math)
-- **Compared to Baselines**:
-  - Random selection: 4%
-  - Rule-based: 60%
-  - Single-agent LLM: 70%
-  - Multi-agent (ours): 90%
-
----
-
-## 🔧 Technical Details
-
-### Models Used
-
-- **Claude 3.5 Haiku**: Fast, cost-efficient for calculations
-- **Claude Sonnet 4**: High-quality for explanations
-- **sentence-transformers/all-MiniLM-L6-v2**: Local embeddings (free)
-
-### RAG Pipeline
-
-1. Text chunking: 150-250 tokens per card
-2. Embedding: 384-dimensional vectors
-3. Storage: FAISS IndexFlatL2
-4. Retrieval: Top-k semantic search (k=3)
-
----
-
-## 🚧 Limitations
-
-- Dataset: 25 cards (manually curated)
-- No real-time offers or approval modeling
-- Point valuations are estimated
-- Requires Anthropic API access
-
----
-
-## 🔮 Future Work
-
-- [ ] Expand to 100+ cards
-- [ ] Real-time scraping of card offers
-- [ ] Approval likelihood modeling
-- [ ] Web UI (Streamlit/Gradio)
-- [ ] User feedback loop
-- [ ] Multi-year portfolio optimization
-- [ ] Integration with transaction data (Plaid API)
-
----
-
-## 📝 License
-
-MIT License - see [LICENSE](LICENSE) file for details.
-
----
-
-## 👥 Authors
-
-- **Anish Wadkar** 
-- **Atharva Parab** 
-- **Anish Nair** 
----
-
-
-
-
-**Built with ❤️ at Indiana University**
-```
+- Card offers can change after their recorded verification date.
+- Point values are estimates and vary by redemption method.
+- Annual credits are counted at face value even when a user may not use every credit.
+- Reward caps and issuer-portal restrictions are not yet modeled as fully structured rules.
+- Recommendations are educational estimates, not financial advice.

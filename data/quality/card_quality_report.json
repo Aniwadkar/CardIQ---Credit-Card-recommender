@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-19T18:19:07.567254+00:00",
+  "input_file": "D:/PROJECTS/CardIQ---Credit-Card-recommender/data/raw/credit_cards_llm_special_features_filled.json",
+  "output_file": "D:/PROJECTS/CardIQ---Credit-Card-recommender/data/processed/cards_processed.json",
+  "pipeline_status": "passed",
+  "summary": {
+    "total_cards": 25,
+    "processed_cards": 25,
+    "error_count": 0,
+    "warning_count": 0,
+    "cards_requiring_review": 0,
+    "product_status_counts": {
+      "active": 23,
+      "closed_to_new_applicants": 1,
+      "replaced": 1
+    },
+    "issue_code_counts": {}
+  },
+  "card_results": [
+    {
+      "card_id": "ink_business_unlimited_credit_card",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "american_express_platinum",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "capital_one_quicksilver",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "capital_one_venture_x",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "wells_fargo_autograph_journey",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "chase_world_of_hyatt",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "bilt_mastercard",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "coscto_anywhere_visa",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "american_express_gold",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "wells_fargo_autograph",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "capital_one_savor",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "chase_freedom_unlimited",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "discover_it_cash_back",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "american_express_blue_cash_everyday",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "wells_fargo_active_cash",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "chase_amazon_prime_visa",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "citi_doublecash",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "chase_sapphire_preferred_card",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "chase_sapphire_reserve",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "citi_custom_cash",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "chase_freedom_flex",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "apple_card",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "citi_strata_elite_card",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "blue_cash_preferred_card_from_american_express",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "card_id": "capital_one_venture_rewards_credit_card",
+      "passed": true,
+      "issues": []
+    }
+  ]
+}

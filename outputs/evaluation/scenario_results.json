@@ -1,0 +1,469 @@
+{
+  "generated_at": "2026-07-19T18:17:24.342279+00:00",
+  "scenario_count": 3,
+  "scenarios": [
+    {
+      "scenario_id": "food_focused",
+      "description": "High monthly dining and grocery spending.",
+      "profile": {
+        "monthly_spending": {
+          "dining": 1200,
+          "groceries": 900,
+          "travel": 100,
+          "gas": 150,
+          "streaming": 80,
+          "other": 300,
+          "flights": 0,
+          "hotels": 0,
+          "transit": 0
+        },
+        "credit_score": "good",
+        "max_annual_fee": 500
+      },
+      "recommendations": [
+        {
+          "rank": 1,
+          "card_id": "american_express_gold",
+          "card_name": "American Express Gold",
+          "issuer": "American Express",
+          "source_url": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+          "source_last_checked": "2026-07-19",
+          "why_this_card": "American Express Gold ranks well for dining, groceries, other with an estimated $1,354.50 in annual rewards. After fees, credits, and signup value, its blended ranking score is $4,157.00.",
+          "financial_summary": {
+            "year_1_value": 2703.5,
+            "year_2_value": 4157.0,
+            "year_3_value": 5610.5,
+            "annual_rewards": 1354.5,
+            "annual_fee": 325.0,
+            "signup_bonus": 1250.0,
+            "annual_credits": 424.0,
+            "ranking_score": 4157.0
+          },
+          "how_to_maximize": [
+            "Use this card for dining purchases to capture its stronger reward rate.",
+            "Use this card for groceries purchases to capture its stronger reward rate.",
+            "Use eligible annual credits only when they match purchases you would already make.",
+            "Plan spending carefully if pursuing the $6,000 signup-bonus requirement over 6 months."
+          ],
+          "watch_out_for": [
+            "This card has a $325 annual fee, so ongoing value matters after year one.",
+            "Annual credits may require specific merchants or usage patterns, so do not treat all credits as automatic cash."
+          ],
+          "optimization_strategy": {
+            "use_this_card_for": [
+              "dining",
+              "groceries"
+            ],
+            "pair_with": "Chase Sapphire Preferred Card",
+            "avoid_using_for": [
+              "travel",
+              "flights",
+              "hotels"
+            ]
+          },
+          "long_term_projection": {
+            "one_year": "Estimated net value of $2,703.50, including first-year bonus value.",
+            "two_years": "Estimated cumulative value of $4,157.00 after two years.",
+            "three_years": "Estimated cumulative value of $5,610.50 after three years."
+          }
+        },
+        {
+          "rank": 2,
+          "card_id": "chase_sapphire_preferred_card",
+          "card_name": "Chase Sapphire Preferred Card",
+          "issuer": "Chase",
+          "source_url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred",
+          "source_last_checked": "2026-07-19",
+          "why_this_card": "Chase Sapphire Preferred Card ranks well for dining, groceries, other with an estimated $853.50 in annual rewards. After fees, credits, and signup value, its blended ranking score is $2,654.50.",
+          "financial_summary": {
+            "year_1_value": 1796.0,
+            "year_2_value": 2654.5,
+            "year_3_value": 3513.0,
+            "annual_rewards": 853.5,
+            "annual_fee": 95.0,
+            "signup_bonus": 937.5,
+            "annual_credits": 100.0,
+            "ranking_score": 2654.5
+          },
+          "how_to_maximize": [
+            "Use this card for dining purchases to capture its stronger reward rate.",
+            "Use eligible annual credits only when they match purchases you would already make.",
+            "Plan spending carefully if pursuing the $5,000 signup-bonus requirement over 3 months."
+          ],
+          "watch_out_for": [
+            "This card has a $95 annual fee, so ongoing value matters after year one.",
+            "Annual credits may require specific merchants or usage patterns, so do not treat all credits as automatic cash."
+          ],
+          "optimization_strategy": {
+            "use_this_card_for": [
+              "dining"
+            ],
+            "pair_with": null,
+            "avoid_using_for": [
+              "travel",
+              "flights",
+              "hotels"
+            ]
+          },
+          "long_term_projection": {
+            "one_year": "Estimated net value of $1,796.00, including first-year bonus value.",
+            "two_years": "Estimated cumulative value of $2,654.50 after two years.",
+            "three_years": "Estimated cumulative value of $3,513.00 after three years."
+          }
+        },
+        {
+          "rank": 3,
+          "card_id": "capital_one_venture_rewards_credit_card",
+          "card_name": "Capital One Venture Rewards Credit Card",
+          "issuer": "Capital One",
+          "source_url": "https://www.capitalone.com/credit-cards/venture/",
+          "source_last_checked": "2026-07-19",
+          "why_this_card": "Capital One Venture Rewards Credit Card ranks well for dining, groceries, other with an estimated $864.00 in annual rewards. After fees, credits, and signup value, its blended ranking score is $2,475.50.",
+          "financial_summary": {
+            "year_1_value": 1706.5,
+            "year_2_value": 2475.5,
+            "year_3_value": 3244.5,
+            "annual_rewards": 864.0,
+            "annual_fee": 95.0,
+            "signup_bonus": 937.5,
+            "annual_credits": 0.0,
+            "ranking_score": 2475.5
+          },
+          "how_to_maximize": [
+            "Use this card for dining purchases to capture its stronger reward rate.",
+            "Use this card for groceries purchases to capture its stronger reward rate.",
+            "Use this card for other purchases to capture its stronger reward rate.",
+            "Plan spending carefully if pursuing the $4,000 signup-bonus requirement over 3 months."
+          ],
+          "watch_out_for": [
+            "This card has a $95 annual fee, so ongoing value matters after year one."
+          ],
+          "optimization_strategy": {
+            "use_this_card_for": [
+              "dining",
+              "groceries",
+              "other"
+            ],
+            "pair_with": null,
+            "avoid_using_for": [
+              "flights",
+              "gas",
+              "streaming"
+            ]
+          },
+          "long_term_projection": {
+            "one_year": "Estimated net value of $1,706.50, including first-year bonus value.",
+            "two_years": "Estimated cumulative value of $2,475.50 after two years.",
+            "three_years": "Estimated cumulative value of $3,244.50 after three years."
+          }
+        }
+      ],
+      "portfolio_strategy": "Use American Express Gold as the primary card, then compare it with Chase Sapphire Preferred Card for categories where the second card has stronger rewards or lower friction."
+    },
+    {
+      "scenario_id": "frequent_traveler",
+      "description": "Heavy travel spending split across flights, hotels, and transit.",
+      "profile": {
+        "monthly_spending": {
+          "dining": 400,
+          "groceries": 250,
+          "travel": 1800,
+          "gas": 100,
+          "streaming": 50,
+          "other": 300,
+          "flights": 900,
+          "hotels": 700,
+          "transit": 200
+        },
+        "credit_score": "excellent",
+        "max_annual_fee": 500
+      },
+      "recommendations": [
+        {
+          "rank": 1,
+          "card_id": "capital_one_venture_x",
+          "card_name": "Capital One Venture X",
+          "issuer": "Capital One",
+          "source_url": "https://www.capitalone.com/credit-cards/venture-x/",
+          "source_last_checked": "2026-07-19",
+          "why_this_card": "Capital One Venture X ranks well for travel, dining, other with an estimated $1,380.00 in annual rewards. After fees, credits, and signup value, its blended ranking score is $3,707.50.",
+          "financial_summary": {
+            "year_1_value": 2322.5,
+            "year_2_value": 3707.5,
+            "year_3_value": 5092.5,
+            "annual_rewards": 1380.0,
+            "annual_fee": 395.0,
+            "signup_bonus": 937.5,
+            "annual_credits": 400.0,
+            "ranking_score": 3707.5
+          },
+          "how_to_maximize": [
+            "Use this card for travel purchases to capture its stronger reward rate.",
+            "Use eligible annual credits only when they match purchases you would already make.",
+            "Plan spending carefully if pursuing the $4,000 signup-bonus requirement over 3 months."
+          ],
+          "watch_out_for": [
+            "This card has a $395 annual fee, so ongoing value matters after year one.",
+            "Annual credits may require specific merchants or usage patterns, so do not treat all credits as automatic cash."
+          ],
+          "optimization_strategy": {
+            "use_this_card_for": [
+              "travel"
+            ],
+            "pair_with": "Wells Fargo Autograph Journey",
+            "avoid_using_for": [
+              "dining",
+              "flights",
+              "groceries"
+            ]
+          },
+          "long_term_projection": {
+            "one_year": "Estimated net value of $2,322.50, including first-year bonus value.",
+            "two_years": "Estimated cumulative value of $3,707.50 after two years.",
+            "three_years": "Estimated cumulative value of $5,092.50 after three years."
+          }
+        },
+        {
+          "rank": 2,
+          "card_id": "wells_fargo_autograph_journey",
+          "card_name": "Wells Fargo Autograph Journey",
+          "issuer": "Wells Fargo",
+          "source_url": "https://creditcards.wellsfargo.com/autograph-journey-visa-credit-card/",
+          "source_last_checked": "2026-07-19",
+          "why_this_card": "Wells Fargo Autograph Journey ranks well for travel, dining, other with an estimated $1,380.00 in annual rewards. After fees, credits, and signup value, its blended ranking score is $3,320.00.",
+          "financial_summary": {
+            "year_1_value": 2035.0,
+            "year_2_value": 3320.0,
+            "year_3_value": 4605.0,
+            "annual_rewards": 1380.0,
+            "annual_fee": 95.0,
+            "signup_bonus": 750.0,
+            "annual_credits": 0.0,
+            "ranking_score": 3320.0
+          },
+          "how_to_maximize": [
+            "Use this card for travel purchases to capture its stronger reward rate.",
+            "Use this card for dining purchases to capture its stronger reward rate.",
+            "Plan spending carefully if pursuing the $4,000 signup-bonus requirement over 3 months."
+          ],
+          "watch_out_for": [
+            "This card has a $95 annual fee, so ongoing value matters after year one."
+          ],
+          "optimization_strategy": {
+            "use_this_card_for": [
+              "travel",
+              "dining"
+            ],
+            "pair_with": null,
+            "avoid_using_for": [
+              "flights",
+              "groceries",
+              "gas"
+            ]
+          },
+          "long_term_projection": {
+            "one_year": "Estimated net value of $2,035.00, including first-year bonus value.",
+            "two_years": "Estimated cumulative value of $3,320.00 after two years.",
+            "three_years": "Estimated cumulative value of $4,605.00 after three years."
+          }
+        },
+        {
+          "rank": 3,
+          "card_id": "capital_one_venture_rewards_credit_card",
+          "card_name": "Capital One Venture Rewards Credit Card",
+          "issuer": "Capital One",
+          "source_url": "https://www.capitalone.com/credit-cards/venture/",
+          "source_last_checked": "2026-07-19",
+          "why_this_card": "Capital One Venture Rewards Credit Card ranks well for travel, dining, other with an estimated $1,185.00 in annual rewards. After fees, credits, and signup value, its blended ranking score is $3,117.50.",
+          "financial_summary": {
+            "year_1_value": 2027.5,
+            "year_2_value": 3117.5,
+            "year_3_value": 4207.5,
+            "annual_rewards": 1185.0,
+            "annual_fee": 95.0,
+            "signup_bonus": 937.5,
+            "annual_credits": 0.0,
+            "ranking_score": 3117.5
+          },
+          "how_to_maximize": [
+            "Use this card for travel purchases to capture its stronger reward rate.",
+            "Use this card for dining purchases to capture its stronger reward rate.",
+            "Use this card for other purchases to capture its stronger reward rate.",
+            "Plan spending carefully if pursuing the $4,000 signup-bonus requirement over 3 months."
+          ],
+          "watch_out_for": [
+            "This card has a $95 annual fee, so ongoing value matters after year one."
+          ],
+          "optimization_strategy": {
+            "use_this_card_for": [
+              "travel",
+              "dining",
+              "other"
+            ],
+            "pair_with": null,
+            "avoid_using_for": [
+              "flights",
+              "groceries",
+              "gas"
+            ]
+          },
+          "long_term_projection": {
+            "one_year": "Estimated net value of $2,027.50, including first-year bonus value.",
+            "two_years": "Estimated cumulative value of $3,117.50 after two years.",
+            "three_years": "Estimated cumulative value of $4,207.50 after three years."
+          }
+        }
+      ],
+      "portfolio_strategy": "Use Capital One Venture X as the primary card, then compare it with Wells Fargo Autograph Journey for categories where the second card has stronger rewards or lower friction."
+    },
+    {
+      "scenario_id": "no_annual_fee",
+      "description": "Everyday spending with a strict zero-dollar annual-fee limit.",
+      "profile": {
+        "monthly_spending": {
+          "dining": 300,
+          "groceries": 500,
+          "travel": 100,
+          "gas": 250,
+          "streaming": 60,
+          "other": 900,
+          "flights": 0,
+          "hotels": 0,
+          "transit": 0
+        },
+        "credit_score": "good",
+        "max_annual_fee": 0
+      },
+      "recommendations": [
+        {
+          "rank": 1,
+          "card_id": "american_express_blue_cash_everyday",
+          "card_name": "American Express Blue Cash Everyday",
+          "issuer": "American Express",
+          "source_url": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-everyday/",
+          "source_last_checked": "2026-07-19",
+          "why_this_card": "American Express Blue Cash Everyday ranks well for other, groceries, dining with an estimated $649.20 in annual rewards. After fees, credits, and signup value, its blended ranking score is $1,498.40.",
+          "financial_summary": {
+            "year_1_value": 849.2,
+            "year_2_value": 1498.4,
+            "year_3_value": 2147.6,
+            "annual_rewards": 649.2,
+            "annual_fee": 0.0,
+            "signup_bonus": 200.0,
+            "annual_credits": 0.0,
+            "ranking_score": 1498.4
+          },
+          "how_to_maximize": [
+            "Use this card for other purchases to capture its stronger reward rate.",
+            "Use this card for groceries purchases to capture its stronger reward rate.",
+            "Plan spending carefully if pursuing the $2,000 signup-bonus requirement over 6 months."
+          ],
+          "watch_out_for": [
+            "It has a 2.7% foreign transaction fee, which can hurt travel value."
+          ],
+          "optimization_strategy": {
+            "use_this_card_for": [
+              "other",
+              "groceries"
+            ],
+            "pair_with": "Apple Card",
+            "avoid_using_for": [
+              "dining",
+              "travel",
+              "flights"
+            ]
+          },
+          "long_term_projection": {
+            "one_year": "Estimated net value of $849.20, including first-year bonus value.",
+            "two_years": "Estimated cumulative value of $1,498.40 after two years.",
+            "three_years": "Estimated cumulative value of $2,147.60 after three years."
+          }
+        },
+        {
+          "rank": 2,
+          "card_id": "apple_card",
+          "card_name": "Apple Card",
+          "issuer": "Apple",
+          "source_url": "https://www.apple.com/apple-card/",
+          "source_last_checked": "2026-07-19",
+          "why_this_card": "Apple Card ranks well for other, groceries, dining with an estimated $633.00 in annual rewards. After fees, credits, and signup value, its blended ranking score is $1,266.00.",
+          "financial_summary": {
+            "year_1_value": 633.0,
+            "year_2_value": 1266.0,
+            "year_3_value": 1899.0,
+            "annual_rewards": 633.0,
+            "annual_fee": 0.0,
+            "signup_bonus": 0.0,
+            "annual_credits": 0.0,
+            "ranking_score": 1266.0
+          },
+          "how_to_maximize": [
+            "Use this card for other purchases to capture its stronger reward rate.",
+            "Use this card for groceries purchases to capture its stronger reward rate.",
+            "Use this card for dining purchases to capture its stronger reward rate."
+          ],
+          "watch_out_for": [
+            "Confirm current issuer terms before applying because card offers change over time."
+          ],
+          "optimization_strategy": {
+            "use_this_card_for": [
+              "other",
+              "groceries",
+              "dining"
+            ],
+            "pair_with": null,
+            "avoid_using_for": []
+          },
+          "long_term_projection": {
+            "one_year": "Estimated net value of $633.00, including first-year bonus value.",
+            "two_years": "Estimated cumulative value of $1,266.00 after two years.",
+            "three_years": "Estimated cumulative value of $1,899.00 after three years."
+          }
+        },
+        {
+          "rank": 3,
+          "card_id": "wells_fargo_autograph",
+          "card_name": "Wells Fargo Autograph",
+          "issuer": "Wells Fargo",
+          "source_url": "https://creditcards.wellsfargo.com/autograph-visa-credit-card/",
+          "source_last_checked": "2026-07-19",
+          "why_this_card": "Wells Fargo Autograph ranks well for other, groceries, dining with an estimated $481.50 in annual rewards. After fees, credits, and signup value, its blended ranking score is $1,263.00.",
+          "financial_summary": {
+            "year_1_value": 781.5,
+            "year_2_value": 1263.0,
+            "year_3_value": 1744.5,
+            "annual_rewards": 481.5,
+            "annual_fee": 0.0,
+            "signup_bonus": 300.0,
+            "annual_credits": 0.0,
+            "ranking_score": 1263.0
+          },
+          "how_to_maximize": [
+            "Use this card for dining purchases to capture its stronger reward rate.",
+            "Plan spending carefully if pursuing the $1,000 signup-bonus requirement over 3 months."
+          ],
+          "watch_out_for": [
+            "Confirm current issuer terms before applying because card offers change over time."
+          ],
+          "optimization_strategy": {
+            "use_this_card_for": [
+              "dining"
+            ],
+            "pair_with": null,
+            "avoid_using_for": [
+              "travel",
+              "flights",
+              "hotels"
+            ]
+          },
+          "long_term_projection": {
+            "one_year": "Estimated net value of $781.50, including first-year bonus value.",
+            "two_years": "Estimated cumulative value of $1,263.00 after two years.",
+            "three_years": "Estimated cumulative value of $1,744.50 after three years."
+          }
+        }
+      ],
+      "portfolio_strategy": "Use American Express Blue Cash Everyday as the primary card, then compare it with Apple Card for categories where the second card has stronger rewards or lower friction."
+    }
+  ]
+}

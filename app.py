@@ -13,9 +13,9 @@ import uvicorn
 project_root = Path(__file__).parent
 sys.path.insert(0, str(project_root))
 
-from src.agents.orchestrator import Orchestrator
 from src.models.user_input import UserProfile, MonthlySpending
-from src.data.card_loader import CardLoader
+from src.repositories import CardRepository
+from src.services import RecommendationService
 
 app = FastAPI(title="CardIQ")
 
@@ -26,9 +26,8 @@ templates = Jinja2Templates(directory="templates")
 
 def get_available_rewards_types():
     try:
-        loader = CardLoader()
-        all_cards = loader.load_cards()
-        return sorted(set(card['rewards_type'] for card in all_cards))
+        repository = CardRepository()
+        return repository.list_rewards_types()
     except Exception:
         return ["cashback", "travel", "points"]
 
@@ -36,8 +35,7 @@ def get_available_rewards_types():
 @app.get("/", response_class=HTMLResponse)
 async def index(request: Request):
     rewards_types = get_available_rewards_types()
-    return templates.TemplateResponse("index.html", {
-        "request": request,
+    return templates.TemplateResponse(request, "index.html", {
         "rewards_types": rewards_types
     })
 
@@ -79,8 +77,8 @@ async def recommend(
             preferred_rewards_type=rewards_pref,
         )
 
-        orchestrator = Orchestrator()
-        result = orchestrator.process(user_profile, verbose=False)
+        recommendation_service = RecommendationService()
+        result = recommendation_service.recommend(user_profile)
 
         total_monthly = dining + groceries + travel + gas + streaming + other
 
@@ -93,8 +91,7 @@ async def recommend(
             "Other": other,
         }
 
-        return templates.TemplateResponse("results.html", {
-            "request": request,
+        return templates.TemplateResponse(request, "results.html", {
             "recommendations": result.recommendations,
             "portfolio_strategy": result.portfolio_strategy,
             "spending_data": spending_data,

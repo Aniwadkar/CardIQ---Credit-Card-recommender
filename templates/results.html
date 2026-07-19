@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CardIQ — Your Recommendations</title>
+  <title>CardIQ - Your Recommendations</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
@@ -47,7 +47,7 @@
       font-family: 'Syne', sans-serif;
       font-weight: 800;
       font-size: 1.5rem;
-      letter-spacing: -0.02em;
+      letter-spacing: 0;
     }
     .logo span { color: var(--accent); }
 
@@ -82,7 +82,7 @@
       font-family: 'Syne', sans-serif;
       font-size: clamp(1.8rem, 3.5vw, 2.8rem);
       font-weight: 800;
-      letter-spacing: -0.03em;
+      letter-spacing: 0;
       line-height: 1.1;
     }
 
@@ -105,14 +105,20 @@
       margin-top: 2.5rem;
     }
 
+    .comparison-scroll {
+      margin-bottom: 2.5rem;
+      max-width: 100%;
+      overflow-x: auto;
+    }
+
     .comparison-table {
       width: 100%;
       border-collapse: collapse;
       background: white;
       border: 1.5px solid var(--border);
-      border-radius: 16px;
+      border-radius: 8px;
       overflow: hidden;
-      margin-bottom: 2.5rem;
+      margin-bottom: 0;
     }
 
     .comparison-table th {
@@ -152,7 +158,7 @@
       font-family: 'Syne', sans-serif;
       font-size: 1.4rem;
       font-weight: 800;
-      letter-spacing: -0.03em;
+      letter-spacing: 0;
     }
 
     .val-positive { color: #1a8a4a; }
@@ -183,7 +189,7 @@
     .card-panel {
       background: white;
       border: 1.5px solid var(--border);
-      border-radius: 16px;
+      border-radius: 8px;
       overflow: hidden;
       animation: fadeUp 0.4s ease both;
     }
@@ -211,7 +217,7 @@
       font-family: 'Syne', sans-serif;
       font-size: 1.25rem;
       font-weight: 800;
-      letter-spacing: -0.02em;
+      letter-spacing: 0;
       margin-bottom: 0.4rem;
     }
 
@@ -220,6 +226,14 @@
       color: var(--muted);
       line-height: 1.5;
       max-width: 500px;
+    }
+
+    .card-issuer {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+      text-transform: uppercase;
     }
 
     .value-pill {
@@ -231,7 +245,7 @@
       font-family: 'Syne', sans-serif;
       font-size: 1.8rem;
       font-weight: 800;
-      letter-spacing: -0.04em;
+      letter-spacing: 0;
       color: #1a8a4a;
     }
 
@@ -301,6 +315,51 @@
       padding: 1.5rem 2rem;
     }
 
+    .calculation-strip {
+      border-top: 1.5px solid var(--border);
+      padding: 1.25rem 2rem;
+      background: #faf9f6;
+    }
+
+    .calculation-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .calculation-label {
+      color: var(--muted);
+      font-size: 0.68rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .calculation-value {
+      font-family: 'Syne', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-top: 0.25rem;
+    }
+
+    .source-row {
+      align-items: center;
+      border-top: 1px solid var(--border);
+      display: flex;
+      font-size: 0.78rem;
+      justify-content: space-between;
+      padding: 0.9rem 2rem;
+    }
+
+    .source-row span { color: var(--muted); }
+
+    .source-row a {
+      color: var(--accent2);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .source-row a:hover { text-decoration: underline; }
+
     .year-bars {
       display: flex;
       gap: 1rem;
@@ -341,7 +400,7 @@
     .chart-card {
       background: white;
       border: 1.5px solid var(--border);
-      border-radius: 16px;
+      border-radius: 8px;
       padding: 1.5rem;
     }
 
@@ -350,7 +409,7 @@
       font-size: 0.9rem;
       font-weight: 700;
       margin-bottom: 1rem;
-      letter-spacing: -0.01em;
+      letter-spacing: 0;
     }
 
     canvas { max-width: 100%; }
@@ -359,7 +418,7 @@
     .portfolio-card {
       background: var(--ink);
       color: white;
-      border-radius: 16px;
+      border-radius: 8px;
       padding: 2rem;
       margin-top: 1rem;
     }
@@ -384,11 +443,15 @@
       header { padding: 1rem 1.5rem; }
       .page-title { padding: 2rem 1.5rem 1rem; }
       .main { padding: 0 1.5rem 3rem; }
-      .comparison-table { font-size: 0.8rem; }
+      .comparison-table { font-size: 0.8rem; min-width: 640px; }
       .comparison-table td, .comparison-table th { padding: 0.8rem 1rem; }
+      .card-header { flex-direction: column; padding: 1.5rem; }
+      .value-pill { text-align: left; }
       .card-body { grid-template-columns: 1fr; }
       .card-col + .card-col { border-left: none; border-top: 1.5px solid var(--border); }
       .charts-row { grid-template-columns: 1fr; }
+      .calculation-grid { grid-template-columns: 1fr 1fr; }
+      .source-row { align-items: flex-start; flex-direction: column; gap: 0.4rem; }
     }
   </style>
 </head>
@@ -408,6 +471,7 @@
 
   <!-- Comparison Table -->
   <p class="section-label">Side-by-Side Comparison</p>
+  <div class="comparison-scroll">
   <table class="comparison-table">
     <thead>
       <tr>
@@ -418,6 +482,7 @@
             {% if rec.rank == 1 %}🥇 #1 Pick{% elif rec.rank == 2 %}🥈 #2{% else %}🥉 #3{% endif %}
           </div>
           <div style="font-size:0.95rem">{{ rec.card_name }}</div>
+          <div style="font-size:0.72rem;color:#8a8880;margin-top:0.2rem">{{ rec.issuer }}</div>
         </th>
         {% endfor %}
       </tr>
@@ -451,6 +516,7 @@
       </tr>
     </tbody>
   </table>
+  </div>
 
   <!-- Charts -->
   <div class="charts-row">
@@ -477,11 +543,38 @@
             {% if rec.rank == 1 %}🥇 Best Match{% elif rec.rank == 2 %}🥈 Runner Up{% else %}🥉 Third Pick{% endif %}
           </div>
           <div class="card-name">{{ rec.card_name }}</div>
+          <div class="card-issuer">{{ rec.issuer }}</div>
           <div class="card-tagline">{{ rec.why_this_card }}</div>
         </div>
         <div class="value-pill">
           <div class="label">Year 1 Value</div>
           <div class="amount">${{ "{:,.0f}".format(rec.financial_summary.year_1_value) }}</div>
+        </div>
+      </div>
+
+      <div class="calculation-strip">
+        <div class="col-title">Year 1 Calculation</div>
+        <div class="calculation-grid">
+          <div>
+            <div class="calculation-label">Annual rewards</div>
+            <div class="calculation-value">${{ "{:,.0f}".format(rec.financial_summary.annual_rewards) }}</div>
+          </div>
+          <div>
+            <div class="calculation-label">Signup value</div>
+            <div class="calculation-value">+${{ "{:,.0f}".format(rec.financial_summary.signup_bonus) }}</div>
+          </div>
+          <div>
+            <div class="calculation-label">Annual credits</div>
+            <div class="calculation-value">+${{ "{:,.0f}".format(rec.financial_summary.annual_credits) }}</div>
+          </div>
+          <div>
+            <div class="calculation-label">Annual fee</div>
+            <div class="calculation-value">-${{ "{:,.0f}".format(rec.financial_summary.annual_fee) }}</div>
+          </div>
+          <div>
+            <div class="calculation-label">Year 1 net</div>
+            <div class="calculation-value val-positive">${{ "{:,.0f}".format(rec.financial_summary.year_1_value) }}</div>
+          </div>
         </div>
       </div>
 
@@ -518,6 +611,10 @@
           {% endfor %}
         </div>
       </div>
+      <div class="source-row">
+        <span>Terms verified {{ rec.source_last_checked }}. Offers can change.</span>
+        <a href="{{ rec.source_url }}" target="_blank" rel="noopener noreferrer">View official issuer source ↗</a>
+      </div>
     </div>
     {% endfor %}
   </div>
@@ -525,7 +622,7 @@
   <!-- Portfolio Strategy -->
   <p class="section-label" style="margin-top:2.5rem">Portfolio Strategy</p>
   <div class="portfolio-card">
-    <p class="pt">💡 AI Insight</p>
+    <p class="pt">Portfolio strategy</p>
     <p>{{ portfolio_strategy }}</p>
   </div>
 
@@ -541,13 +638,13 @@
       datasets: [
         {% for rec in recommendations %}
         {
-          label: '{{ rec.card_name }}',
+          label: {{ rec.card_name | tojson }},
           data: [
             {{ rec.financial_summary.year_1_value }},
             {{ rec.financial_summary.year_2_value }},
             {{ rec.financial_summary.year_3_value }}
           ],
-          backgroundColor: {{ ['\'rgba(255,77,28,0.85)\'', '\'rgba(28,63,255,0.85)\'', '\'rgba(212,168,71,0.85)\''][rec.rank - 1] }},
+          backgroundColor: {{ (['rgba(255,77,28,0.85)', 'rgba(28,63,255,0.85)', 'rgba(212,168,71,0.85)'][rec.rank - 1]) | tojson }},
           borderRadius: 6,
         },
         {% endfor %}

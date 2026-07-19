@@ -21,7 +21,7 @@ def calculate_category_rewards(
     travel = monthly_spending.get('travel', 0)
 
     # Calculate remaining general travel (excluding subcategories)
-    remaining_travel = travel - (flights + hotels + transit)
+    remaining_travel = max(travel - (flights + hotels + transit), 0)
 
     for category, monthly_amount in monthly_spending.items():
         if category in card_rewards:

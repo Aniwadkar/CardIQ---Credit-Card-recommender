@@ -40,6 +40,9 @@ class Recommendation(BaseModel):
     rank: int
     card_id: str
     card_name: str
+    issuer: str
+    source_url: str
+    source_last_checked: str
     why_this_card: str
     financial_summary: Dict[str, float]
     how_to_maximize: List[str]

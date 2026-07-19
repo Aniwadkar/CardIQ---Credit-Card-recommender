@@ -19,7 +19,18 @@ SONNET_MODEL = os.getenv("SONNET_MODEL", "claude-sonnet-4-20250514")
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "all-MiniLM-L6-v2")
 
 # Paths
-CARDS_JSON_PATH = PROJECT_ROOT / os.getenv("CARDS_JSON_PATH", "data/raw/credit_cards_llm_special_features_filled.json")
+RAW_CARDS_JSON_PATH = PROJECT_ROOT / os.getenv(
+    "RAW_CARDS_JSON_PATH", "data/raw/credit_cards_llm_special_features_filled.json"
+)
+PROCESSED_CARDS_JSON_PATH = PROJECT_ROOT / os.getenv(
+    "PROCESSED_CARDS_JSON_PATH", "data/processed/cards_processed.json"
+)
+CARDS_JSON_PATH = PROJECT_ROOT / os.getenv(
+    "CARDS_JSON_PATH", str(PROCESSED_CARDS_JSON_PATH.relative_to(PROJECT_ROOT))
+)
+CARD_QUALITY_REPORT_PATH = PROJECT_ROOT / os.getenv(
+    "CARD_QUALITY_REPORT_PATH", "data/quality/card_quality_report.json"
+)
 VECTOR_DB_PATH = PROJECT_ROOT / os.getenv("VECTOR_DB_PATH", "data/vector_db/")
 
 # RAG Configuration

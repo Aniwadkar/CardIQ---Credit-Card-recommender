@@ -5,11 +5,12 @@
     "issuer": "Chase",
     "annual_fee": 0,
     "signup_bonus": {
-      "amount": 750,
+      "amount": 1000,
       "currency": "usd",
-      "spend_requirement": 6000,
-      "timeframe_months": 3,
-      "estimated_value": 750.0
+      "spend_requirement": 8000,
+      "timeframe_months": 4,
+      "estimated_value": 1000.0,
+      "qualification_type": "spend"
     },
     "rewards": {
       "dining": 1.5,
@@ -38,7 +39,10 @@
       "Primary rental car coverage for business rentals",
       "Purchase protection and extended warranty on eligible purchases",
       "Travel protections like baggage delay and trip coverage"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://creditcards.chase.com/business-credit-cards/ink/unlimited",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "american_express_platinum",
@@ -48,9 +52,10 @@
     "signup_bonus": {
       "amount": "175000",
       "currency": "points",
-      "spend_requirement": 8000,
+      "spend_requirement": 12000,
       "timeframe_months": 6,
-      "estimated_value": "2188"
+      "estimated_value": "2188",
+      "qualification_type": "spend"
     },
     "rewards": {
       "dining": 1.0,
@@ -126,7 +131,10 @@
       "Hotel elite status (Hilton & Marriott)",
       "Multiple annual statement credits",
       "Premium travel protections"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "capital_one_quicksilver",
@@ -136,9 +144,10 @@
     "signup_bonus": {
       "amount": 200,
       "currency": "usd",
-      "spend_requirement": null,
-      "timeframe_months": null,
-      "estimated_value": 200.0
+      "spend_requirement": 500,
+      "timeframe_months": 3,
+      "estimated_value": 200.0,
+      "qualification_type": "spend"
     },
     "rewards": {
       "dining": 1.5,
@@ -167,7 +176,10 @@
       "Simple flat-rate cash back with easy redemptions to cash, statement credit, or gift cards",
       "Elevated 5% cash back on hotels and rental cars booked through Capital One Travel",
       "Elevated rewards on Capital One Entertainment purchases"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://www.capitalone.com/credit-cards/quicksilver/",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "capital_one_venture_x",
@@ -178,8 +190,9 @@
       "amount": 75000,
       "currency": "miles",
       "spend_requirement": 4000,
-      "timeframe_months": null,
-      "estimated_value": 937.5
+      "timeframe_months": 3,
+      "estimated_value": 937.5,
+      "qualification_type": "spend"
     },
     "rewards": {
       "dining": 1.0,
@@ -220,7 +233,10 @@
       "$300 annual Capital One Travel credit",
       "10,000 anniversary miles each year",
       "Primary rental car insurance"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://www.capitalone.com/credit-cards/venture-x/",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "wells_fargo_autograph_journey",
@@ -232,7 +248,8 @@
       "currency": "points",
       "spend_requirement": 4000,
       "timeframe_months": 3,
-      "estimated_value": 750.0
+      "estimated_value": 750.0,
+      "qualification_type": "spend"
     },
     "rewards": {
       "dining": 3.0,
@@ -260,7 +277,10 @@
     "special_features": [
       "Elevated multipliers on hotels, airlines, and dining",
       "$50 annual airline statement credit"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://creditcards.wellsfargo.com/autograph-journey-visa-credit-card/",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "chase_world_of_hyatt",
@@ -268,11 +288,13 @@
     "issuer": "Chase",
     "annual_fee": 95,
     "signup_bonus": {
-      "amount": 60000,
+      "amount": 75000,
       "currency": "points",
-      "spend_requirement": null,
+      "spend_requirement": 5000,
       "timeframe_months": 6,
-      "estimated_value": 750.0
+      "estimated_value": 937.5,
+      "qualification_type": "tiered_spend",
+      "details": "45,000 points after $5,000 in 3 months, plus up to 30,000 points by earning 2X total on normally 1X purchases for 6 months, capped at $15,000 spend."
     },
     "rewards": {
       "dining": 2.0,
@@ -307,7 +329,10 @@
       "Free night certificate each year",
       "Automatic Hyatt elite status",
       "Bonus night credits for spend"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "bilt_mastercard",
@@ -347,11 +372,15 @@
     "special_features": [
       "Earn points on rent with no fee",
       "Transfer partners for travel redemptions"
-    ]
+    ],
+    "product_status": "replaced",
+    "source_url": "https://www.bilt.com/card",
+    "source_last_checked": "2026-07-19",
+    "source_note": "The original Bilt Mastercard is no longer the current product. Bilt now offers Blue, Obsidian, and Palladium cards."
   },
   {
     "card_id": "coscto_anywhere_visa",
-    "card_name": "Coscto Anywhere Visa",
+    "card_name": "Costco Anywhere Visa Card by Citi",
     "issuer": "Citibank",
     "annual_fee": 0,
     "signup_bonus": {
@@ -383,11 +412,14 @@
     "best_for": [
       "cash_back"
     ],
-    "foreign_transaction_fee": 3.0,
+    "foreign_transaction_fee": 0.0,
     "special_features": [
       "Card doubles as your Costco membership card with your photo and number",
       "Travel protections including travel accident insurance and car rental coverage on eligible trips"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://www.citi.com/credit-cards/citi-costco-anywhere-visa-credit-card",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "american_express_gold",
@@ -399,7 +431,8 @@
       "currency": "points",
       "spend_requirement": 6000,
       "timeframe_months": 6,
-      "estimated_value": 1250.0
+      "estimated_value": 1250.0,
+      "qualification_type": "spend"
     },
     "rewards": {
       "dining": 4.0,
@@ -449,7 +482,10 @@
       "Strong dining and supermarket multipliers",
       "Monthly Uber Cash benefit",
       "Monthly dining credits"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "wells_fargo_autograph",
@@ -461,7 +497,8 @@
       "currency": "points",
       "spend_requirement": 1000,
       "timeframe_months": 3,
-      "estimated_value": 300.0
+      "estimated_value": 300.0,
+      "qualification_type": "spend"
     },
     "rewards": {
       "dining": 3.0,
@@ -488,7 +525,10 @@
     "foreign_transaction_fee": 0.0,
     "special_features": [
       "3x on popular everyday categories"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://creditcards.wellsfargo.com/autograph-visa-credit-card/",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "capital_one_savor",
@@ -496,20 +536,21 @@
     "issuer": "Capital One",
     "annual_fee": 0,
     "signup_bonus": {
-      "amount": 300,
+      "amount": 250,
       "currency": "usd",
-      "spend_requirement": null,
-      "timeframe_months": null,
-      "estimated_value": 300.0
+      "spend_requirement": 500,
+      "timeframe_months": 3,
+      "estimated_value": 250.0,
+      "qualification_type": "spend"
     },
     "rewards": {
-      "dining": 1.0,
+      "dining": 3.0,
       "travel": 1.0,
       "flights": 1.0,
       "hotels": 1.0,
       "groceries": 3.0,
       "gas": 1.0,
-      "streaming": 1.0,
+      "streaming": 3.0,
       "transit": 1.0,
       "other": 1.0
     },
@@ -524,12 +565,15 @@
     "best_for": [
       "cash_back"
     ],
-    "foreign_transaction_fee": 3.0,
+    "foreign_transaction_fee": 0.0,
     "special_features": [
       "High cash back on dining, entertainment, and popular streaming services",
       "8% cash back on purchases through Capital One Entertainment with access to special events",
       "5% cash back on hotels and rental cars booked through Capital One Travel"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://www.capitalone.com/credit-cards/savor/",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "chase_freedom_unlimited",
@@ -539,9 +583,10 @@
     "signup_bonus": {
       "amount": 200,
       "currency": "usd",
-      "spend_requirement": null,
+      "spend_requirement": 500,
       "timeframe_months": 3,
-      "estimated_value": 200.0
+      "estimated_value": 200.0,
+      "qualification_type": "spend"
     },
     "rewards": {
       "dining": 3.0,
@@ -570,7 +615,10 @@
       "Trip cancellation and interruption insurance on eligible travel purchases",
       "Auto rental collision damage waiver coverage on eligible rentals",
       "Purchase protection and extended warranty on eligible purchases"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "discover_it_cash_back",
@@ -610,7 +658,10 @@
     "special_features": [
       "First-year Cashback Match that doubles all cash back earned for new cardholders",
       "Rotating 5% bonus categories that change each quarter (activation required)"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://www.discover.com/credit-cards/cash-back/it-card/",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "american_express_blue_cash_everyday",
@@ -620,9 +671,11 @@
     "signup_bonus": {
       "amount": 200,
       "currency": "usd",
-      "spend_requirement": null,
-      "timeframe_months": null,
-      "estimated_value": 200.0
+      "spend_requirement": 2000,
+      "timeframe_months": 6,
+      "estimated_value": 200.0,
+      "qualification_type": "variable_spend",
+      "details": "Apply to learn the welcome offer; the published offer is as high as $200."
     },
     "rewards": {
       "dining": 1.0,
@@ -646,12 +699,15 @@
     "best_for": [
       "cash_back"
     ],
-    "foreign_transaction_fee": 3.0,
+    "foreign_transaction_fee": 2.7,
     "special_features": [
       "$7 monthly statement credit for eligible Disney+, Hulu, or ESPN+ subscriptions (up to $84 per year)",
       "$15 monthly statement credit for Home Chef meal-kit subscriptions (up to $180 per year)",
       "Purchase protection on eligible purchases against accidental damage or theft"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-everyday/",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "wells_fargo_active_cash",
@@ -663,7 +719,8 @@
       "currency": "usd",
       "spend_requirement": 500,
       "timeframe_months": 3,
-      "estimated_value": 200.0
+      "estimated_value": 200.0,
+      "qualification_type": "spend"
     },
     "rewards": {
       "dining": 2.0,
@@ -691,7 +748,10 @@
     "special_features": [
       "Cell phone protection up to $600 per claim when you pay your monthly bill with the card",
       "Travel and emergency assistance services on eligible trips"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://creditcards.wellsfargo.com/active-cash-credit-card/",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "chase_amazon_prime_visa",
@@ -703,7 +763,9 @@
       "currency": "usd",
       "spend_requirement": null,
       "timeframe_months": null,
-      "estimated_value": 150.0
+      "estimated_value": 150.0,
+      "qualification_type": "on_approval",
+      "details": "Amazon Gift Card is loaded to the eligible Prime member's account upon approval."
     },
     "rewards": {
       "dining": 2.0,
@@ -727,12 +789,15 @@
     "best_for": [
       "cash_back"
     ],
-    "foreign_transaction_fee": 3.0,
+    "foreign_transaction_fee": 0.0,
     "special_features": [
       "5% back at Amazon, Amazon Fresh, and Whole Foods Market for eligible Prime members",
       "Travel insurance benefits including coverage for certain trip disruptions and lost or delayed baggage",
       "Purchase protection on eligible Amazon and non-Amazon purchases"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://creditcards.chase.com/cash-back-credit-cards/amazon-prime-rewards",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "citi_doublecash",
@@ -744,7 +809,8 @@
       "currency": "usd",
       "spend_requirement": 1500,
       "timeframe_months": 6,
-      "estimated_value": 200.0
+      "estimated_value": 200.0,
+      "qualification_type": "spend"
     },
     "rewards": {
       "dining": 2.0,
@@ -773,7 +839,10 @@
       "Earns 1% cash back when you buy and 1% when you pay, for a total of 2% on all purchases",
       "Introductory 0% APR promotion on balance transfers for a limited time",
       "Limited-time 5% rewards on eligible Citi Travel portal hotel and car rental bookings"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://www.citi.com/credit-cards/citi-double-cash-credit-card/",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "chase_sapphire_preferred_card",
@@ -783,9 +852,10 @@
     "signup_bonus": {
       "amount": 75000,
       "currency": "points",
-      "spend_requirement": null,
+      "spend_requirement": 5000,
       "timeframe_months": 3,
-      "estimated_value": 937.5
+      "estimated_value": 937.5,
+      "qualification_type": "spend"
     },
     "rewards": {
       "dining": 3.0,
@@ -793,8 +863,8 @@
       "flights": 1.0,
       "hotels": 1.0,
       "groceries": 1.0,
-      "gas": 1.0,
-      "streaming": 1.0,
+      "gas": 3.0,
+      "streaming": 3.0,
       "transit": 1.0,
       "other": 1.0
     },
@@ -806,8 +876,8 @@
     },
     "annual_credits": [
       {
-        "name": "$50 annual hotel credit",
-        "value": 50,
+        "name": "$100 Chase Travel hotel credit",
+        "value": 100,
         "category": "travel"
       }
     ],
@@ -819,7 +889,10 @@
     "special_features": [
       "Primary rental car insurance",
       "Strong travel protection benefits"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "chase_sapphire_reserve",
@@ -827,11 +900,12 @@
     "issuer": "Chase",
     "annual_fee": 795,
     "signup_bonus": {
-      "amount": 125000,
+      "amount": 100000,
       "currency": "points",
       "spend_requirement": 6000,
       "timeframe_months": 3,
-      "estimated_value": 1562.5
+      "estimated_value": 1250.0,
+      "qualification_type": "spend"
     },
     "rewards": {
       "dining": 3.0,
@@ -877,7 +951,10 @@
       "Primary rental car insurance",
       "$300 annual travel credit",
       "TSA PreCheck/Global Entry credit"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "citi_custom_cash",
@@ -889,7 +966,8 @@
       "currency": "usd",
       "spend_requirement": 1500,
       "timeframe_months": 6,
-      "estimated_value": 200.0
+      "estimated_value": 200.0,
+      "qualification_type": "spend"
     },
     "rewards": {
       "dining": 1.0,
@@ -918,7 +996,11 @@
       "Automatically earns 5% cash back in your highest eligible spending category each billing cycle (up to $500 in purchases)",
       "Rewards earned as Citi ThankYou points with flexible redemption for cash back, gift cards, and travel",
       "Introductory 0% APR period on purchases and balance transfers"
-    ]
+    ],
+    "product_status": "closed_to_new_applicants",
+    "source_url": "https://www.citi.com/credit-cards/citi-custom-cash-credit-card/",
+    "source_last_checked": "2026-07-19",
+    "source_note": "Citi stopped accepting new applications on May 28, 2026; existing cardmembers are not affected."
   },
   {
     "card_id": "chase_freedom_flex",
@@ -930,10 +1012,11 @@
       "currency": "usd",
       "spend_requirement": 500,
       "timeframe_months": 3,
-      "estimated_value": 200.0
+      "estimated_value": 200.0,
+      "qualification_type": "spend"
     },
     "rewards": {
-      "dining": 1.0,
+      "dining": 3.0,
       "travel": 5.0,
       "flights": 1.0,
       "hotels": 1.0,
@@ -959,7 +1042,10 @@
       "5% cash back in quarterly rotating bonus categories when activated",
       "Cell phone protection when you pay your monthly wireless bill with the card",
       "Travel protections including trip cancellation and interruption insurance and auto rental coverage"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "apple_card",
@@ -1001,7 +1087,10 @@
       "Enhanced rewards when using Apple Pay and at select merchants like Apple, Nike, Uber, and Walgreens",
       "No fees and built-in Wallet app tools that help manage spending and interest",
       "Apple Card Family features that let you share the card and help family members build credit"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://www.apple.com/apple-card/",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "citi_strata_elite_card",
@@ -1013,7 +1102,8 @@
       "currency": "points",
       "spend_requirement": 4000,
       "timeframe_months": 3,
-      "estimated_value": 1000.0
+      "estimated_value": 1000.0,
+      "qualification_type": "spend"
     },
     "rewards": {
       "dining": 6.0,
@@ -1063,7 +1153,10 @@
       "Airport lounge access including Admirals Club visits",
       "High multipliers on Citi Travel bookings",
       "Annual hotel and lifestyle credits"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://www.citi.com/credit-cards/citi-strata-elite-credit-card",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "blue_cash_preferred_card_from_american_express",
@@ -1075,7 +1168,8 @@
       "currency": "usd",
       "spend_requirement": 3000,
       "timeframe_months": 6,
-      "estimated_value": 250.0
+      "estimated_value": 250.0,
+      "qualification_type": "spend"
     },
     "rewards": {
       "dining": 1.0,
@@ -1105,12 +1199,15 @@
     "best_for": [
       "cash_back"
     ],
-    "foreign_transaction_fee": 3.0,
+    "foreign_transaction_fee": 2.7,
     "special_features": [
       "High cash-back rates on U.S. supermarkets, select streaming services, transit, and gas",
       "$10 monthly statement credit for eligible Disney Bundle streaming subscriptions (up to $120 per year)",
       "Amex benefits like purchase protection, return protection, and extended warranty on eligible purchases"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-preferred/",
+    "source_last_checked": "2026-07-19"
   },
   {
     "card_id": "capital_one_venture_rewards_credit_card",
@@ -1122,7 +1219,8 @@
       "currency": "miles",
       "spend_requirement": 4000,
       "timeframe_months": 3,
-      "estimated_value": 937.5
+      "estimated_value": 937.5,
+      "qualification_type": "spend"
     },
     "rewards": {
       "dining": 2.0,
@@ -1150,6 +1248,9 @@
     "special_features": [
       "Simple 2x miles on everything",
       "TSA PreCheck/Global Entry credit"
-    ]
+    ],
+    "product_status": "active",
+    "source_url": "https://www.capitalone.com/credit-cards/venture/",
+    "source_last_checked": "2026-07-19"
   }
 ]

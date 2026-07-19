@@ -1,0 +1,1537 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-19T18:19:07.567254+00:00",
+  "source_file": "D:/PROJECTS/CardIQ---Credit-Card-recommender/data/raw/credit_cards_llm_special_features_filled.json",
+  "card_count": 25,
+  "cards": [
+    {
+      "card_id": "ink_business_unlimited_credit_card",
+      "card_name": "Ink Business Unlimited Credit Card",
+      "issuer": "Chase",
+      "annual_fee": 0,
+      "signup_bonus": {
+        "amount": 1000,
+        "currency": "usd",
+        "spend_requirement": 8000,
+        "timeframe_months": 4,
+        "estimated_value": 1000.0,
+        "qualification_type": "spend"
+      },
+      "rewards": {
+        "dining": 1.5,
+        "travel": 1.5,
+        "flights": 1.5,
+        "hotels": 1.5,
+        "groceries": 1.5,
+        "gas": 1.5,
+        "streaming": 1.5,
+        "transit": 1.5,
+        "other": 1.5
+      },
+      "rewards_type": "business",
+      "point_value": 0.01,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [],
+      "description": "Great card for business users - 1.5% cashback across the board is one of the strongest out there plus Chase rewards points are overpowered",
+      "best_for": [
+        "business"
+      ],
+      "foreign_transaction_fee": 3.0,
+      "special_features": [
+        "Primary rental car coverage for business rentals",
+        "Purchase protection and extended warranty on eligible purchases",
+        "Travel protections like baggage delay and trip coverage"
+      ],
+      "product_status": "active",
+      "source_url": "https://creditcards.chase.com/business-credit-cards/ink/unlimited",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": false,
+        "has_foreign_transaction_fee": true,
+        "annual_credit_value": 0,
+        "effective_annual_fee": 0.0,
+        "base_reward_rate": 1.5,
+        "max_reward_rate": 1.5,
+        "source_domain": "creditcards.chase.com",
+        "reward_rules_need_review": false
+      }
+    },
+    {
+      "card_id": "american_express_platinum",
+      "card_name": "American Express Platinum",
+      "issuer": "American Express",
+      "annual_fee": 895,
+      "signup_bonus": {
+        "amount": "175000",
+        "currency": "points",
+        "spend_requirement": 12000,
+        "timeframe_months": 6,
+        "estimated_value": "2188",
+        "qualification_type": "spend"
+      },
+      "rewards": {
+        "dining": 1.0,
+        "travel": 1.0,
+        "flights": 5.0,
+        "hotels": 5.0,
+        "groceries": 1.0,
+        "gas": 1.0,
+        "streaming": 1.0,
+        "transit": 1.0,
+        "other": 1.0
+      },
+      "rewards_type": "flexible_points",
+      "point_value": 0.0125,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [
+        {
+          "name": "$200 Uber Cash",
+          "value": 200,
+          "category": "rideshare"
+        },
+        {
+          "name": "$120 Uber One credit",
+          "value": 120,
+          "category": "rideshare_membership"
+        },
+        {
+          "name": "$300 digital entertainment credit",
+          "value": 300,
+          "category": "streaming"
+        },
+        {
+          "name": "$600 annual hotel credit",
+          "value": 600,
+          "category": "travel"
+        },
+        {
+          "name": "$200 airline fee credit",
+          "value": 200,
+          "category": "travel"
+        },
+        {
+          "name": "$400 Resy dining credit",
+          "value": 400,
+          "category": "dining"
+        },
+        {
+          "name": "$300 lululemon credit",
+          "value": 300,
+          "category": "shopping"
+        },
+        {
+          "name": "$155 Walmart+ membership credit",
+          "value": 155,
+          "category": "subscription"
+        },
+        {
+          "name": "$209 CLEAR Plus credit",
+          "value": 209,
+          "category": "travel_security"
+        }
+      ],
+      "description": "Premium travel experience with lounge access, but very high annual fee. Need to use credits to justify. Updated to $895 as of 9/18 with the following credits: $400 Resy Credit ($100 per quarter) $600 Hotel Credit (upped from previously) - $300 per half year $200 Oura Ring Credit300 Lululemon Credit ($75 each quarter)",
+      "best_for": [
+        "flexible_points"
+      ],
+      "foreign_transaction_fee": 0.0,
+      "special_features": [
+        "Extensive airport lounge access (Centurion, Priority Pass, Delta SkyClub when flying Delta)",
+        "Hotel elite status (Hilton & Marriott)",
+        "Multiple annual statement credits",
+        "Premium travel protections"
+      ],
+      "product_status": "active",
+      "source_url": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": true,
+        "has_foreign_transaction_fee": false,
+        "annual_credit_value": 2484.0,
+        "effective_annual_fee": -1589.0,
+        "base_reward_rate": 1.0,
+        "max_reward_rate": 5.0,
+        "source_domain": "americanexpress.com",
+        "reward_rules_need_review": true
+      }
+    },
+    {
+      "card_id": "capital_one_quicksilver",
+      "card_name": "Capital One Quicksilver",
+      "issuer": "Capital One",
+      "annual_fee": 0,
+      "signup_bonus": {
+        "amount": 200,
+        "currency": "usd",
+        "spend_requirement": 500,
+        "timeframe_months": 3,
+        "estimated_value": 200.0,
+        "qualification_type": "spend"
+      },
+      "rewards": {
+        "dining": 1.5,
+        "travel": 1.5,
+        "flights": 1.5,
+        "hotels": 1.5,
+        "groceries": 1.5,
+        "gas": 1.5,
+        "streaming": 1.5,
+        "transit": 1.5,
+        "other": 1.5
+      },
+      "rewards_type": "cash_back",
+      "point_value": 0.01,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [],
+      "description": "The Savor is better, but this is a good backup / alternative",
+      "best_for": [
+        "cash_back"
+      ],
+      "foreign_transaction_fee": 0.0,
+      "special_features": [
+        "Simple flat-rate cash back with easy redemptions to cash, statement credit, or gift cards",
+        "Elevated 5% cash back on hotels and rental cars booked through Capital One Travel",
+        "Elevated rewards on Capital One Entertainment purchases"
+      ],
+      "product_status": "active",
+      "source_url": "https://www.capitalone.com/credit-cards/quicksilver/",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": false,
+        "has_foreign_transaction_fee": false,
+        "annual_credit_value": 0,
+        "effective_annual_fee": 0.0,
+        "base_reward_rate": 1.5,
+        "max_reward_rate": 1.5,
+        "source_domain": "capitalone.com",
+        "reward_rules_need_review": false
+      }
+    },
+    {
+      "card_id": "capital_one_venture_x",
+      "card_name": "Capital One Venture X",
+      "issuer": "Capital One",
+      "annual_fee": 395,
+      "signup_bonus": {
+        "amount": 75000,
+        "currency": "miles",
+        "spend_requirement": 4000,
+        "timeframe_months": 3,
+        "estimated_value": 937.5,
+        "qualification_type": "spend"
+      },
+      "rewards": {
+        "dining": 1.0,
+        "travel": 5.0,
+        "flights": 1.0,
+        "hotels": 10.0,
+        "groceries": 1.0,
+        "gas": 1.0,
+        "streaming": 1.0,
+        "transit": 1.0,
+        "other": 1.0
+      },
+      "rewards_type": "travel",
+      "point_value": 0.0125,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [
+        {
+          "name": "$300 Capital One Travel credit",
+          "value": 300,
+          "category": "travel"
+        },
+        {
+          "name": "10,000 anniversary miles (est. $100 value)",
+          "value": 100,
+          "category": "travel"
+        }
+      ],
+      "description": "You can make up the fee easily with the $300 annual travel credit, and 10,000 bonus miles anniversary bonus. Great lounge access too.",
+      "best_for": [
+        "travel"
+      ],
+      "foreign_transaction_fee": 0.0,
+      "special_features": [
+        "Priority Pass and Capital One lounge access",
+        "$300 annual Capital One Travel credit",
+        "10,000 anniversary miles each year",
+        "Primary rental car insurance"
+      ],
+      "product_status": "active",
+      "source_url": "https://www.capitalone.com/credit-cards/venture-x/",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": true,
+        "has_foreign_transaction_fee": false,
+        "annual_credit_value": 400.0,
+        "effective_annual_fee": -5.0,
+        "base_reward_rate": 1.0,
+        "max_reward_rate": 10.0,
+        "source_domain": "capitalone.com",
+        "reward_rules_need_review": true
+      }
+    },
+    {
+      "card_id": "wells_fargo_autograph_journey",
+      "card_name": "Wells Fargo Autograph Journey",
+      "issuer": "Wells Fargo",
+      "annual_fee": 95,
+      "signup_bonus": {
+        "amount": 60000,
+        "currency": "points",
+        "spend_requirement": 4000,
+        "timeframe_months": 3,
+        "estimated_value": 750.0,
+        "qualification_type": "spend"
+      },
+      "rewards": {
+        "dining": 3.0,
+        "travel": 3.0,
+        "flights": 4.0,
+        "hotels": 5.0,
+        "groceries": 1.0,
+        "gas": 1.0,
+        "streaming": 1.0,
+        "transit": 1.0,
+        "other": 1.0
+      },
+      "rewards_type": "flexible_points",
+      "point_value": 0.0125,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [],
+      "description": "Wells Fargo Cards are not very good, and I'd rather just have the Chase Sapphire Preferred for this annual fee",
+      "best_for": [
+        "flexible_points"
+      ],
+      "foreign_transaction_fee": 0.0,
+      "special_features": [
+        "Elevated multipliers on hotels, airlines, and dining",
+        "$50 annual airline statement credit"
+      ],
+      "product_status": "active",
+      "source_url": "https://creditcards.wellsfargo.com/autograph-journey-visa-credit-card/",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": true,
+        "has_foreign_transaction_fee": false,
+        "annual_credit_value": 0,
+        "effective_annual_fee": 95.0,
+        "base_reward_rate": 1.0,
+        "max_reward_rate": 5.0,
+        "source_domain": "creditcards.wellsfargo.com",
+        "reward_rules_need_review": true
+      }
+    },
+    {
+      "card_id": "chase_world_of_hyatt",
+      "card_name": "Chase World of Hyatt",
+      "issuer": "Chase",
+      "annual_fee": 95,
+      "signup_bonus": {
+        "amount": 75000,
+        "currency": "points",
+        "spend_requirement": 5000,
+        "timeframe_months": 6,
+        "estimated_value": 937.5,
+        "qualification_type": "tiered_spend",
+        "details": "45,000 points after $5,000 in 3 months, plus up to 30,000 points by earning 2X total on normally 1X purchases for 6 months, capped at $15,000 spend."
+      },
+      "rewards": {
+        "dining": 2.0,
+        "travel": 2.0,
+        "flights": 1.0,
+        "hotels": 4.0,
+        "groceries": 1.0,
+        "gas": 1.0,
+        "streaming": 1.0,
+        "transit": 1.0,
+        "other": 1.0
+      },
+      "rewards_type": "hotel_points",
+      "point_value": 0.0125,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [
+        {
+          "name": "Annual free night (est. $200 value)",
+          "value": 200,
+          "category": "hotel_free_night"
+        }
+      ],
+      "description": "You get 1 free night per year, but the bonus multipliers aren't great for normal spend",
+      "best_for": [
+        "hotel points"
+      ],
+      "foreign_transaction_fee": 0.0,
+      "special_features": [
+        "Free night certificate each year",
+        "Automatic Hyatt elite status",
+        "Bonus night credits for spend"
+      ],
+      "product_status": "active",
+      "source_url": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": true,
+        "has_foreign_transaction_fee": false,
+        "annual_credit_value": 200.0,
+        "effective_annual_fee": -105.0,
+        "base_reward_rate": 1.0,
+        "max_reward_rate": 4.0,
+        "source_domain": "creditcards.chase.com",
+        "reward_rules_need_review": true
+      }
+    },
+    {
+      "card_id": "bilt_mastercard",
+      "card_name": "Bilt Mastercard",
+      "issuer": "Bilt",
+      "annual_fee": 0,
+      "signup_bonus": {
+        "amount": null,
+        "currency": null,
+        "spend_requirement": null,
+        "timeframe_months": null,
+        "estimated_value": null
+      },
+      "rewards": {
+        "dining": 3.0,
+        "travel": 2.0,
+        "flights": 1.0,
+        "hotels": 1.0,
+        "groceries": 1.0,
+        "gas": 1.0,
+        "streaming": 1.0,
+        "transit": 1.0,
+        "other": 1.0
+      },
+      "rewards_type": "flexible_points",
+      "point_value": 0.0125,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [],
+      "description": "Get points for paying your rent. The only card you can do this with must use the points with their Bilt portal",
+      "best_for": [
+        "flexible_points"
+      ],
+      "foreign_transaction_fee": 0.0,
+      "special_features": [
+        "Earn points on rent with no fee",
+        "Transfer partners for travel redemptions"
+      ],
+      "product_status": "replaced",
+      "source_url": "https://www.bilt.com/card",
+      "source_last_checked": "2026-07-19",
+      "source_note": "The original Bilt Mastercard is no longer the current product. Bilt now offers Blue, Obsidian, and Palladium cards.",
+      "derived_features": {
+        "is_active": false,
+        "has_annual_fee": false,
+        "has_foreign_transaction_fee": false,
+        "annual_credit_value": 0,
+        "effective_annual_fee": 0.0,
+        "base_reward_rate": 1.0,
+        "max_reward_rate": 3.0,
+        "source_domain": "bilt.com",
+        "reward_rules_need_review": true
+      }
+    },
+    {
+      "card_id": "coscto_anywhere_visa",
+      "card_name": "Costco Anywhere Visa Card by Citi",
+      "issuer": "Citi",
+      "annual_fee": 0,
+      "signup_bonus": {
+        "amount": null,
+        "currency": null,
+        "spend_requirement": null,
+        "timeframe_months": null,
+        "estimated_value": null
+      },
+      "rewards": {
+        "dining": 3.0,
+        "travel": 3.0,
+        "flights": 1.0,
+        "hotels": 1.0,
+        "groceries": 1.0,
+        "gas": 5.0,
+        "streaming": 1.0,
+        "transit": 1.0,
+        "other": 1.0
+      },
+      "rewards_type": "cash_back",
+      "point_value": 0.01,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [],
+      "description": "If you shop at Costco, or your life revolves around 1x Costco trip per week - you will love this card",
+      "best_for": [
+        "cash_back"
+      ],
+      "foreign_transaction_fee": 0.0,
+      "special_features": [
+        "Card doubles as your Costco membership card with your photo and number",
+        "Travel protections including travel accident insurance and car rental coverage on eligible trips"
+      ],
+      "product_status": "active",
+      "source_url": "https://www.citi.com/credit-cards/citi-costco-anywhere-visa-credit-card",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": false,
+        "has_foreign_transaction_fee": false,
+        "annual_credit_value": 0,
+        "effective_annual_fee": 0.0,
+        "base_reward_rate": 1.0,
+        "max_reward_rate": 5.0,
+        "source_domain": "citi.com",
+        "reward_rules_need_review": true
+      }
+    },
+    {
+      "card_id": "american_express_gold",
+      "card_name": "American Express Gold",
+      "issuer": "American Express",
+      "annual_fee": 325,
+      "signup_bonus": {
+        "amount": 100000,
+        "currency": "points",
+        "spend_requirement": 6000,
+        "timeframe_months": 6,
+        "estimated_value": 1250.0,
+        "qualification_type": "spend"
+      },
+      "rewards": {
+        "dining": 4.0,
+        "travel": 1.0,
+        "flights": 1.0,
+        "hotels": 1.0,
+        "groceries": 4.0,
+        "gas": 1.0,
+        "streaming": 1.0,
+        "transit": 1.0,
+        "other": 1.0
+      },
+      "rewards_type": "dining_rewards",
+      "point_value": 0.0125,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [
+        {
+          "name": "$120 Uber Cash",
+          "value": 120,
+          "category": "rideshare"
+        },
+        {
+          "name": "$120 dining credit",
+          "value": 120,
+          "category": "dining"
+        },
+        {
+          "name": "$84 Dunkin' credit",
+          "value": 84,
+          "category": "dining"
+        },
+        {
+          "name": "$100 Resy dining credit",
+          "value": 100,
+          "category": "dining"
+        }
+      ],
+      "description": "Great overall credit card. The card I use the most. Easy to breakeven on the annual fee, and since I eat out a lot I take advantage of the card",
+      "best_for": [
+        "dining rewards"
+      ],
+      "foreign_transaction_fee": 0.0,
+      "special_features": [
+        "Strong dining and supermarket multipliers",
+        "Monthly Uber Cash benefit",
+        "Monthly dining credits"
+      ],
+      "product_status": "active",
+      "source_url": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": true,
+        "has_foreign_transaction_fee": false,
+        "annual_credit_value": 424.0,
+        "effective_annual_fee": -99.0,
+        "base_reward_rate": 1.0,
+        "max_reward_rate": 4.0,
+        "source_domain": "americanexpress.com",
+        "reward_rules_need_review": true
+      }
+    },
+    {
+      "card_id": "wells_fargo_autograph",
+      "card_name": "Wells Fargo Autograph",
+      "issuer": "Wells Fargo",
+      "annual_fee": 0,
+      "signup_bonus": {
+        "amount": 20000,
+        "currency": "points",
+        "spend_requirement": 1000,
+        "timeframe_months": 3,
+        "estimated_value": 300.0,
+        "qualification_type": "spend"
+      },
+      "rewards": {
+        "dining": 3.0,
+        "travel": 1.0,
+        "flights": 1.0,
+        "hotels": 1.0,
+        "groceries": 1.0,
+        "gas": 3.0,
+        "streaming": 1.0,
+        "transit": 3.0,
+        "other": 1.0
+      },
+      "rewards_type": "flexible_points",
+      "point_value": 0.0125,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [],
+      "description": "Wells Fargo Cards are not very good, and these benefits are not amazing compared to other $0 annual fee cards",
+      "best_for": [
+        "flexible_points"
+      ],
+      "foreign_transaction_fee": 0.0,
+      "special_features": [
+        "3x on popular everyday categories"
+      ],
+      "product_status": "active",
+      "source_url": "https://creditcards.wellsfargo.com/autograph-visa-credit-card/",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": false,
+        "has_foreign_transaction_fee": false,
+        "annual_credit_value": 0,
+        "effective_annual_fee": 0.0,
+        "base_reward_rate": 1.0,
+        "max_reward_rate": 3.0,
+        "source_domain": "creditcards.wellsfargo.com",
+        "reward_rules_need_review": true
+      }
+    },
+    {
+      "card_id": "capital_one_savor",
+      "card_name": "Capital One Savor",
+      "issuer": "Capital One",
+      "annual_fee": 0,
+      "signup_bonus": {
+        "amount": 250,
+        "currency": "usd",
+        "spend_requirement": 500,
+        "timeframe_months": 3,
+        "estimated_value": 250.0,
+        "qualification_type": "spend"
+      },
+      "rewards": {
+        "dining": 3.0,
+        "travel": 1.0,
+        "flights": 1.0,
+        "hotels": 1.0,
+        "groceries": 3.0,
+        "gas": 1.0,
+        "streaming": 3.0,
+        "transit": 1.0,
+        "other": 1.0
+      },
+      "rewards_type": "cash_back",
+      "point_value": 0.01,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [],
+      "description": "No annual fee, great cash back rewards.",
+      "best_for": [
+        "cash_back"
+      ],
+      "foreign_transaction_fee": 0.0,
+      "special_features": [
+        "High cash back on dining, entertainment, and popular streaming services",
+        "8% cash back on purchases through Capital One Entertainment with access to special events",
+        "5% cash back on hotels and rental cars booked through Capital One Travel"
+      ],
+      "product_status": "active",
+      "source_url": "https://www.capitalone.com/credit-cards/savor/",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": false,
+        "has_foreign_transaction_fee": false,
+        "annual_credit_value": 0,
+        "effective_annual_fee": 0.0,
+        "base_reward_rate": 1.0,
+        "max_reward_rate": 3.0,
+        "source_domain": "capitalone.com",
+        "reward_rules_need_review": true
+      }
+    },
+    {
+      "card_id": "chase_freedom_unlimited",
+      "card_name": "Chase Freedom Unlimited ",
+      "issuer": "Chase",
+      "annual_fee": 0,
+      "signup_bonus": {
+        "amount": 200,
+        "currency": "usd",
+        "spend_requirement": 500,
+        "timeframe_months": 3,
+        "estimated_value": 200.0,
+        "qualification_type": "spend"
+      },
+      "rewards": {
+        "dining": 3.0,
+        "travel": 5.0,
+        "flights": 1.5,
+        "hotels": 1.5,
+        "groceries": 1.5,
+        "gas": 1.5,
+        "streaming": 1.5,
+        "transit": 1.5,
+        "other": 1.5
+      },
+      "rewards_type": "cash_back",
+      "point_value": 0.01,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [],
+      "description": "Great starter Chase card for the Chase trifecta, good signup bonus + no frills",
+      "best_for": [
+        "cash_back"
+      ],
+      "foreign_transaction_fee": 3.0,
+      "special_features": [
+        "Trip cancellation and interruption insurance on eligible travel purchases",
+        "Auto rental collision damage waiver coverage on eligible rentals",
+        "Purchase protection and extended warranty on eligible purchases"
+      ],
+      "product_status": "active",
+      "source_url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": false,
+        "has_foreign_transaction_fee": true,
+        "annual_credit_value": 0,
+        "effective_annual_fee": 0.0,
+        "base_reward_rate": 1.5,
+        "max_reward_rate": 5.0,
+        "source_domain": "creditcards.chase.com",
+        "reward_rules_need_review": true
+      }
+    },
+    {
+      "card_id": "discover_it_cash_back",
+      "card_name": "Discover it Cash Back",
+      "issuer": "Discover",
+      "annual_fee": 0,
+      "signup_bonus": {
+        "amount": null,
+        "currency": null,
+        "spend_requirement": null,
+        "timeframe_months": null,
+        "estimated_value": null
+      },
+      "rewards": {
+        "dining": 1.0,
+        "travel": 1.0,
+        "flights": 1.0,
+        "hotels": 1.0,
+        "groceries": 5.0,
+        "gas": 1.0,
+        "streaming": 1.0,
+        "transit": 1.0,
+        "other": 1.0
+      },
+      "rewards_type": "cash_back",
+      "point_value": 0.01,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [],
+      "description": "No annual fee and first year cash back match makes this worthwhile for many categories. Great starter card",
+      "best_for": [
+        "cash_back"
+      ],
+      "foreign_transaction_fee": 0.0,
+      "special_features": [
+        "First-year Cashback Match that doubles all cash back earned for new cardholders",
+        "Rotating 5% bonus categories that change each quarter (activation required)"
+      ],
+      "product_status": "active",
+      "source_url": "https://www.discover.com/credit-cards/cash-back/it-card/",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": false,
+        "has_foreign_transaction_fee": false,
+        "annual_credit_value": 0,
+        "effective_annual_fee": 0.0,
+        "base_reward_rate": 1.0,
+        "max_reward_rate": 5.0,
+        "source_domain": "discover.com",
+        "reward_rules_need_review": true
+      }
+    },
+    {
+      "card_id": "american_express_blue_cash_everyday",
+      "card_name": "American Express Blue Cash Everyday",
+      "issuer": "American Express",
+      "annual_fee": 0,
+      "signup_bonus": {
+        "amount": 200,
+        "currency": "usd",
+        "spend_requirement": 2000,
+        "timeframe_months": 6,
+        "estimated_value": 200.0,
+        "qualification_type": "variable_spend",
+        "details": "Apply to learn the welcome offer; the published offer is as high as $200."
+      },
+      "rewards": {
+        "dining": 1.0,
+        "travel": 1.0,
+        "flights": 1.0,
+        "hotels": 1.0,
+        "groceries": 3.0,
+        "gas": 3.0,
+        "streaming": 1.0,
+        "transit": 1.0,
+        "other": 3.0
+      },
+      "rewards_type": "cash_back",
+      "point_value": 0.01,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [],
+      "description": "Great Amex Cash Back Card. No frills",
+      "best_for": [
+        "cash_back"
+      ],
+      "foreign_transaction_fee": 2.7,
+      "special_features": [
+        "$7 monthly statement credit for eligible Disney+, Hulu, or ESPN+ subscriptions (up to $84 per year)",
+        "$15 monthly statement credit for Home Chef meal-kit subscriptions (up to $180 per year)",
+        "Purchase protection on eligible purchases against accidental damage or theft"
+      ],
+      "product_status": "active",
+      "source_url": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-everyday/",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": false,
+        "has_foreign_transaction_fee": true,
+        "annual_credit_value": 0,
+        "effective_annual_fee": 0.0,
+        "base_reward_rate": 3.0,
+        "max_reward_rate": 3.0,
+        "source_domain": "americanexpress.com",
+        "reward_rules_need_review": false
+      }
+    },
+    {
+      "card_id": "wells_fargo_active_cash",
+      "card_name": "Wells Fargo Active Cash",
+      "issuer": "Wells Fargo",
+      "annual_fee": 0,
+      "signup_bonus": {
+        "amount": 200,
+        "currency": "usd",
+        "spend_requirement": 500,
+        "timeframe_months": 3,
+        "estimated_value": 200.0,
+        "qualification_type": "spend"
+      },
+      "rewards": {
+        "dining": 2.0,
+        "travel": 2.0,
+        "flights": 2.0,
+        "hotels": 2.0,
+        "groceries": 2.0,
+        "gas": 2.0,
+        "streaming": 2.0,
+        "transit": 2.0,
+        "other": 2.0
+      },
+      "rewards_type": "cash_back",
+      "point_value": 0.01,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [],
+      "description": "It's an okay card. I'd probably just prefer the Citi DoubleCash for Cash Back, but for Wells Fargo it isnt bad.",
+      "best_for": [
+        "cash_back"
+      ],
+      "foreign_transaction_fee": 3.0,
+      "special_features": [
+        "Cell phone protection up to $600 per claim when you pay your monthly bill with the card",
+        "Travel and emergency assistance services on eligible trips"
+      ],
+      "product_status": "active",
+      "source_url": "https://creditcards.wellsfargo.com/active-cash-credit-card/",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": false,
+        "has_foreign_transaction_fee": true,
+        "annual_credit_value": 0,
+        "effective_annual_fee": 0.0,
+        "base_reward_rate": 2.0,
+        "max_reward_rate": 2.0,
+        "source_domain": "creditcards.wellsfargo.com",
+        "reward_rules_need_review": false
+      }
+    },
+    {
+      "card_id": "chase_amazon_prime_visa",
+      "card_name": "Chase Amazon Prime Visa",
+      "issuer": "Chase",
+      "annual_fee": 0,
+      "signup_bonus": {
+        "amount": 150,
+        "currency": "usd",
+        "spend_requirement": null,
+        "timeframe_months": null,
+        "estimated_value": 150.0,
+        "qualification_type": "on_approval",
+        "details": "Amazon Gift Card is loaded to the eligible Prime member's account upon approval."
+      },
+      "rewards": {
+        "dining": 2.0,
+        "travel": 1.0,
+        "flights": 1.0,
+        "hotels": 1.0,
+        "groceries": 1.0,
+        "gas": 2.0,
+        "streaming": 1.0,
+        "transit": 1.0,
+        "other": 1.0
+      },
+      "rewards_type": "cash_back",
+      "point_value": 0.01,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [],
+      "description": "This is a good card if you use Amazon a lot, or shop at Whole Foods. You may also need a Prime subscription to make it worth it.",
+      "best_for": [
+        "cash_back"
+      ],
+      "foreign_transaction_fee": 0.0,
+      "special_features": [
+        "5% back at Amazon, Amazon Fresh, and Whole Foods Market for eligible Prime members",
+        "Travel insurance benefits including coverage for certain trip disruptions and lost or delayed baggage",
+        "Purchase protection on eligible Amazon and non-Amazon purchases"
+      ],
+      "product_status": "active",
+      "source_url": "https://creditcards.chase.com/cash-back-credit-cards/amazon-prime-rewards",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": false,
+        "has_foreign_transaction_fee": false,
+        "annual_credit_value": 0,
+        "effective_annual_fee": 0.0,
+        "base_reward_rate": 1.0,
+        "max_reward_rate": 2.0,
+        "source_domain": "creditcards.chase.com",
+        "reward_rules_need_review": true
+      }
+    },
+    {
+      "card_id": "citi_doublecash",
+      "card_name": "Citi DoubleCash",
+      "issuer": "Citi",
+      "annual_fee": 0,
+      "signup_bonus": {
+        "amount": 200,
+        "currency": "usd",
+        "spend_requirement": 1500,
+        "timeframe_months": 6,
+        "estimated_value": 200.0,
+        "qualification_type": "spend"
+      },
+      "rewards": {
+        "dining": 2.0,
+        "travel": 2.0,
+        "flights": 2.0,
+        "hotels": 2.0,
+        "groceries": 2.0,
+        "gas": 2.0,
+        "streaming": 2.0,
+        "transit": 2.0,
+        "other": 2.0
+      },
+      "rewards_type": "cash_back",
+      "point_value": 0.01,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [],
+      "description": "A Very Straightforward Card.",
+      "best_for": [
+        "cash_back"
+      ],
+      "foreign_transaction_fee": 3.0,
+      "special_features": [
+        "Earns 1% cash back when you buy and 1% when you pay, for a total of 2% on all purchases",
+        "Introductory 0% APR promotion on balance transfers for a limited time",
+        "Limited-time 5% rewards on eligible Citi Travel portal hotel and car rental bookings"
+      ],
+      "product_status": "active",
+      "source_url": "https://www.citi.com/credit-cards/citi-double-cash-credit-card/",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": false,
+        "has_foreign_transaction_fee": true,
+        "annual_credit_value": 0,
+        "effective_annual_fee": 0.0,
+        "base_reward_rate": 2.0,
+        "max_reward_rate": 2.0,
+        "source_domain": "citi.com",
+        "reward_rules_need_review": false
+      }
+    },
+    {
+      "card_id": "chase_sapphire_preferred_card",
+      "card_name": "Chase Sapphire Preferred Card",
+      "issuer": "Chase",
+      "annual_fee": 95,
+      "signup_bonus": {
+        "amount": 75000,
+        "currency": "points",
+        "spend_requirement": 5000,
+        "timeframe_months": 3,
+        "estimated_value": 937.5,
+        "qualification_type": "spend"
+      },
+      "rewards": {
+        "dining": 3.0,
+        "travel": 2.0,
+        "flights": 1.0,
+        "hotels": 1.0,
+        "groceries": 1.0,
+        "gas": 3.0,
+        "streaming": 3.0,
+        "transit": 1.0,
+        "other": 1.0
+      },
+      "rewards_type": "travel",
+      "point_value": 0.0125,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [
+        {
+          "name": "$100 Chase Travel hotel credit",
+          "value": 100,
+          "category": "travel"
+        }
+      ],
+      "description": "Great mid-tier travel card with good transfer partners. Annual hotel credit for Chase Travel offsets half the fee.",
+      "best_for": [
+        "travel"
+      ],
+      "foreign_transaction_fee": 0.0,
+      "special_features": [
+        "Primary rental car insurance",
+        "Strong travel protection benefits"
+      ],
+      "product_status": "active",
+      "source_url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": true,
+        "has_foreign_transaction_fee": false,
+        "annual_credit_value": 100.0,
+        "effective_annual_fee": -5.0,
+        "base_reward_rate": 1.0,
+        "max_reward_rate": 3.0,
+        "source_domain": "creditcards.chase.com",
+        "reward_rules_need_review": true
+      }
+    },
+    {
+      "card_id": "chase_sapphire_reserve",
+      "card_name": "Chase Sapphire Reserve",
+      "issuer": "Chase",
+      "annual_fee": 795,
+      "signup_bonus": {
+        "amount": 100000,
+        "currency": "points",
+        "spend_requirement": 6000,
+        "timeframe_months": 3,
+        "estimated_value": 1250.0,
+        "qualification_type": "spend"
+      },
+      "rewards": {
+        "dining": 3.0,
+        "travel": 8.0,
+        "flights": 4.0,
+        "hotels": 4.0,
+        "groceries": 1.0,
+        "gas": 1.0,
+        "streaming": 1.0,
+        "transit": 1.0,
+        "other": 1.0
+      },
+      "rewards_type": "travel",
+      "point_value": 0.0125,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [
+        {
+          "name": "$300 annual travel credit",
+          "value": 300,
+          "category": "travel"
+        },
+        {
+          "name": "$500 luxury hotel credit",
+          "value": 500,
+          "category": "travel"
+        },
+        {
+          "name": "Up to $300 Exclusive Tables dining credit",
+          "value": 300,
+          "category": "dining"
+        }
+      ],
+      "description": "New high annual fee is hard to justify unless you can use all the credits.",
+      "best_for": [
+        "travel"
+      ],
+      "foreign_transaction_fee": 0.0,
+      "special_features": [
+        "Priority Pass lounge access",
+        "Primary rental car insurance",
+        "$300 annual travel credit",
+        "TSA PreCheck/Global Entry credit"
+      ],
+      "product_status": "active",
+      "source_url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": true,
+        "has_foreign_transaction_fee": false,
+        "annual_credit_value": 1100.0,
+        "effective_annual_fee": -305.0,
+        "base_reward_rate": 1.0,
+        "max_reward_rate": 8.0,
+        "source_domain": "creditcards.chase.com",
+        "reward_rules_need_review": true
+      }
+    },
+    {
+      "card_id": "citi_custom_cash",
+      "card_name": "Citi Custom Cash",
+      "issuer": "Citi",
+      "annual_fee": 0,
+      "signup_bonus": {
+        "amount": 200,
+        "currency": "usd",
+        "spend_requirement": 1500,
+        "timeframe_months": 6,
+        "estimated_value": 200.0,
+        "qualification_type": "spend"
+      },
+      "rewards": {
+        "dining": 1.0,
+        "travel": 1.0,
+        "flights": 1.0,
+        "hotels": 1.0,
+        "groceries": 1.0,
+        "gas": 5.0,
+        "streaming": 1.0,
+        "transit": 1.0,
+        "other": 1.0
+      },
+      "rewards_type": "cash_back",
+      "point_value": 0.01,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [],
+      "description": "5% cashback on a category up to $500 is good but if you spend a lot I don't like the idea of being capped. That means if you spend more than $10k on a category its probably better to get something different",
+      "best_for": [
+        "cash_back"
+      ],
+      "foreign_transaction_fee": 3.0,
+      "special_features": [
+        "Automatically earns 5% cash back in your highest eligible spending category each billing cycle (up to $500 in purchases)",
+        "Rewards earned as Citi ThankYou points with flexible redemption for cash back, gift cards, and travel",
+        "Introductory 0% APR period on purchases and balance transfers"
+      ],
+      "product_status": "closed_to_new_applicants",
+      "source_url": "https://www.citi.com/credit-cards/citi-custom-cash-credit-card/",
+      "source_last_checked": "2026-07-19",
+      "source_note": "Citi stopped accepting new applications on May 28, 2026; existing cardmembers are not affected.",
+      "derived_features": {
+        "is_active": false,
+        "has_annual_fee": false,
+        "has_foreign_transaction_fee": true,
+        "annual_credit_value": 0,
+        "effective_annual_fee": 0.0,
+        "base_reward_rate": 1.0,
+        "max_reward_rate": 5.0,
+        "source_domain": "citi.com",
+        "reward_rules_need_review": true
+      }
+    },
+    {
+      "card_id": "chase_freedom_flex",
+      "card_name": "Chase Freedom Flex",
+      "issuer": "Chase",
+      "annual_fee": 0,
+      "signup_bonus": {
+        "amount": 200,
+        "currency": "usd",
+        "spend_requirement": 500,
+        "timeframe_months": 3,
+        "estimated_value": 200.0,
+        "qualification_type": "spend"
+      },
+      "rewards": {
+        "dining": 3.0,
+        "travel": 5.0,
+        "flights": 1.0,
+        "hotels": 1.0,
+        "groceries": 1.0,
+        "gas": 1.0,
+        "streaming": 1.0,
+        "transit": 1.0,
+        "other": 1.0
+      },
+      "rewards_type": "cash_back",
+      "point_value": 0.01,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [],
+      "description": "One of the more standard Chase cards. The Unlimited is better",
+      "best_for": [
+        "cash_back"
+      ],
+      "foreign_transaction_fee": 3.0,
+      "special_features": [
+        "5% cash back in quarterly rotating bonus categories when activated",
+        "Cell phone protection when you pay your monthly wireless bill with the card",
+        "Travel protections including trip cancellation and interruption insurance and auto rental coverage"
+      ],
+      "product_status": "active",
+      "source_url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": false,
+        "has_foreign_transaction_fee": true,
+        "annual_credit_value": 0,
+        "effective_annual_fee": 0.0,
+        "base_reward_rate": 1.0,
+        "max_reward_rate": 5.0,
+        "source_domain": "creditcards.chase.com",
+        "reward_rules_need_review": true
+      }
+    },
+    {
+      "card_id": "apple_card",
+      "card_name": "Apple Card",
+      "issuer": "Apple",
+      "annual_fee": 0,
+      "signup_bonus": {
+        "amount": null,
+        "currency": null,
+        "spend_requirement": null,
+        "timeframe_months": null,
+        "estimated_value": null
+      },
+      "rewards": {
+        "dining": 2.0,
+        "travel": 2.0,
+        "flights": 2.0,
+        "hotels": 2.0,
+        "groceries": 2.0,
+        "gas": 2.0,
+        "streaming": 2.0,
+        "transit": 2.0,
+        "other": 2.0
+      },
+      "rewards_type": "flexible_points",
+      "point_value": 0.0125,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [],
+      "description": "Just an average card, good user interface though. Need to be in a place where Apple Pay is accepted a lot to make it worth it",
+      "best_for": [
+        "flexible_points"
+      ],
+      "foreign_transaction_fee": 0.0,
+      "special_features": [
+        "Daily Cash rewards that post instantly on every purchase",
+        "Enhanced rewards when using Apple Pay and at select merchants like Apple, Nike, Uber, and Walgreens",
+        "No fees and built-in Wallet app tools that help manage spending and interest",
+        "Apple Card Family features that let you share the card and help family members build credit"
+      ],
+      "product_status": "active",
+      "source_url": "https://www.apple.com/apple-card/",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": false,
+        "has_foreign_transaction_fee": false,
+        "annual_credit_value": 0,
+        "effective_annual_fee": 0.0,
+        "base_reward_rate": 2.0,
+        "max_reward_rate": 2.0,
+        "source_domain": "apple.com",
+        "reward_rules_need_review": false
+      }
+    },
+    {
+      "card_id": "citi_strata_elite_card",
+      "card_name": "Citi Strata Elite Card",
+      "issuer": "Citi",
+      "annual_fee": 595,
+      "signup_bonus": {
+        "amount": 80000,
+        "currency": "points",
+        "spend_requirement": 4000,
+        "timeframe_months": 3,
+        "estimated_value": 1000.0,
+        "qualification_type": "spend"
+      },
+      "rewards": {
+        "dining": 6.0,
+        "travel": 12.0,
+        "flights": 1.5,
+        "hotels": 12.0,
+        "groceries": 1.5,
+        "gas": 1.5,
+        "streaming": 1.5,
+        "transit": 1.5,
+        "other": 1.5
+      },
+      "rewards_type": "travel",
+      "point_value": 0.0125,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [
+        {
+          "name": "$300 annual hotel benefit",
+          "value": 300,
+          "category": "travel"
+        },
+        {
+          "name": "$200 annual Blacklane chauffeur credit",
+          "value": 200,
+          "category": "transportation"
+        },
+        {
+          "name": "$200 Splurge Credit",
+          "value": 200,
+          "category": "lifestyle"
+        },
+        {
+          "name": "4 Admirals Club passes (~$300 value)",
+          "value": 300,
+          "category": "airport_lounge"
+        }
+      ],
+      "description": "Ultra-premium travel card with rich benefits. Best suited for frequent travelers who can use the hotel credit, lounge access, and high multipliers on Citi Travel bookings.",
+      "best_for": [
+        "travel"
+      ],
+      "foreign_transaction_fee": 0.0,
+      "special_features": [
+        "Airport lounge access including Admirals Club visits",
+        "High multipliers on Citi Travel bookings",
+        "Annual hotel and lifestyle credits"
+      ],
+      "product_status": "active",
+      "source_url": "https://www.citi.com/credit-cards/citi-strata-elite-credit-card",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": true,
+        "has_foreign_transaction_fee": false,
+        "annual_credit_value": 1000.0,
+        "effective_annual_fee": -405.0,
+        "base_reward_rate": 1.5,
+        "max_reward_rate": 12.0,
+        "source_domain": "citi.com",
+        "reward_rules_need_review": true
+      }
+    },
+    {
+      "card_id": "blue_cash_preferred_card_from_american_express",
+      "card_name": "Blue Cash Preferred Card from American Express",
+      "issuer": "American Express",
+      "annual_fee": 95,
+      "signup_bonus": {
+        "amount": 250,
+        "currency": "usd",
+        "spend_requirement": 3000,
+        "timeframe_months": 6,
+        "estimated_value": 250.0,
+        "qualification_type": "spend"
+      },
+      "rewards": {
+        "dining": 1.0,
+        "travel": 1.0,
+        "flights": 1.0,
+        "hotels": 1.0,
+        "groceries": 6.0,
+        "gas": 3.0,
+        "streaming": 6.0,
+        "transit": 3.0,
+        "other": 1.0
+      },
+      "rewards_type": "cash_back",
+      "point_value": 0.01,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [
+        {
+          "name": "$120 Disney Streaming Credit ($10/month statement credits)",
+          "value": 120,
+          "category": "streaming"
+        }
+      ],
+      "description": "One of the best cash-back cards in the U.S. for families. High rewards at U.S. supermarkets and on select streaming services can easily offset the fee.",
+      "best_for": [
+        "cash_back"
+      ],
+      "foreign_transaction_fee": 2.7,
+      "special_features": [
+        "High cash-back rates on U.S. supermarkets, select streaming services, transit, and gas",
+        "$10 monthly statement credit for eligible Disney Bundle streaming subscriptions (up to $120 per year)",
+        "Amex benefits like purchase protection, return protection, and extended warranty on eligible purchases"
+      ],
+      "product_status": "active",
+      "source_url": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-preferred/",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": true,
+        "has_foreign_transaction_fee": true,
+        "annual_credit_value": 120.0,
+        "effective_annual_fee": -25.0,
+        "base_reward_rate": 1.0,
+        "max_reward_rate": 6.0,
+        "source_domain": "americanexpress.com",
+        "reward_rules_need_review": true
+      }
+    },
+    {
+      "card_id": "capital_one_venture_rewards_credit_card",
+      "card_name": "Capital One Venture Rewards Credit Card",
+      "issuer": "Capital One",
+      "annual_fee": 95,
+      "signup_bonus": {
+        "amount": 75000,
+        "currency": "miles",
+        "spend_requirement": 4000,
+        "timeframe_months": 3,
+        "estimated_value": 937.5,
+        "qualification_type": "spend"
+      },
+      "rewards": {
+        "dining": 2.0,
+        "travel": 5.0,
+        "flights": 2.0,
+        "hotels": 5.0,
+        "groceries": 2.0,
+        "gas": 2.0,
+        "streaming": 2.0,
+        "transit": 2.0,
+        "other": 2.0
+      },
+      "rewards_type": "travel",
+      "point_value": 0.0125,
+      "eligibility": {
+        "credit_tier": "good_to_excellent",
+        "min_credit_score": 690
+      },
+      "annual_credits": [],
+      "description": "Straightforward travel card with 2x miles on all purchases and elevated rewards through Capital One Travel. Strong choice if you want simple earning and flexible redemptions.",
+      "best_for": [
+        "travel"
+      ],
+      "foreign_transaction_fee": 0.0,
+      "special_features": [
+        "Simple 2x miles on everything",
+        "TSA PreCheck/Global Entry credit"
+      ],
+      "product_status": "active",
+      "source_url": "https://www.capitalone.com/credit-cards/venture/",
+      "source_last_checked": "2026-07-19",
+      "derived_features": {
+        "is_active": true,
+        "has_annual_fee": true,
+        "has_foreign_transaction_fee": false,
+        "annual_credit_value": 0,
+        "effective_annual_fee": 95.0,
+        "base_reward_rate": 2.0,
+        "max_reward_rate": 5.0,
+        "source_domain": "capitalone.com",
+        "reward_rules_need_review": true
+      }
+    }
+  ]
+}
