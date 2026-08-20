@@ -4,6 +4,23 @@ CardIQ is a hybrid AI credit card recommendation system built around a curated c
 
 The project intentionally stays focused on 25 cards. Its goal is transparent data quality and explainable results, not catalog size.
 
+## Live Demo
+
+**[Open the CardIQ web application](https://cardiq-331679307975.us-central1.run.app)**
+
+The application is hosted on Google Cloud Run. Enter a spending profile to receive three ranked card recommendations with value calculations, grounded explanations, verification dates, and links to official issuer sources.
+
+## Verified Results
+
+| Metric | Result |
+| --- | --- |
+| Curated U.S. credit cards | 25 |
+| Pipeline processing | 25/25 cards |
+| Data-quality errors and warnings | 0 errors, 0 warnings |
+| Automated tests | 24 passing |
+| RAG retrieval benchmark | 100% Hit@3 across 6 queries |
+| Official-source coverage | 100% in the retrieval benchmark |
+
 ## What It Demonstrates
 
 - Data ingestion from a versioned raw JSON catalog
@@ -159,8 +176,6 @@ gcloud run deploy cardiq `
 ```
 
 Cloud Run supplies the `PORT` environment variable. The included Dockerfile starts FastAPI on that port and packages the processed catalog with the application.
-
-Live application: [CardIQ on Cloud Run](https://cardiq-331679307975.us-central1.run.app)
 
 ## Important Limitations
 
